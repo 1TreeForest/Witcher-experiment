@@ -7,9 +7,9 @@ All of the scripts are run from the Witcher-experiments area directory (e.g., Wi
 
 Pull the app container and run the fuzzer
 
-`../scripts/run-single-experiment.sh openemr/witcher-user --pull`
+`../scripts/run_single_experiment.sh openemr/witcher-user --pull`
 
-`../scripts/run-single-experiment.sh openemr/witcher-user `
+`../scripts/run_single_experiment.sh openemr/witcher-user `
 
 The experiments use different directories for the configuration files (witcher_config.json) and results that use a particular user role.
 For example, the evaluation above uses the user role in OpenEMR.
@@ -17,7 +17,7 @@ For example, the evaluation above uses the user role in OpenEMR.
 
 # Burp Scan
 To run a burp scan, start the container
-`../scripts/run-single-experiment.sh ${app}/witcher-user --build --burp`
+`../scripts/run_single_experiment.sh ${app}/witcher-user --build --burp`
 
 The follwing items are added when creating a new Burp scan of a website
 - New Scan
@@ -27,7 +27,7 @@ The follwing items are added when creating a new Burp scan of a website
 
 # Burpplus Scan
 To run a burp scan, start the container
-`../scripts/run-single-experiment.sh ${app}/witcher-user --build --burpplus 8080`
+`../scripts/run_single_experiment.sh ${app}/witcher-user --build --burpplus 8080`
 
 Start Burp, start Burp's proxy on the same port used in the command above (port 8080) and then disable Burp's proxy intercept.
 
