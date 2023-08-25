@@ -4,7 +4,6 @@ Pull the app container and run the fuzzer
 
 ../scripts/run_single_experiment.sh openemr/user 
 
-The OpenEMR interface should be reachable at http://localhost:8080/openemr.
 
 Find exploits in `exploits/` named by CVE.
 
