@@ -7,9 +7,9 @@ All of the scripts are run from the Witcher-experiments area directory (e.g., Wi
 
 Pull the app container and run the fuzzer
 
-`../scripts/run_single_experiment.sh openemr/witcher-user --pull`
+`../scripts/run_single_experiment.sh openemr/user --pull`
 
-`../scripts/run_single_experiment.sh openemr/witcher-user `
+`../scripts/run_single_experiment.sh openemr/user `
 
 The experiments use different directories for the configuration files (witcher_config.json) and results that use a particular user role.
 For example, the evaluation above uses the user role in OpenEMR.

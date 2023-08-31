@@ -11,11 +11,11 @@
 The script 'wait-for-tcp' should be modified as well, and I have attached it in './modified'. The dir 'Witcher-experiment' should be located at '/p/'
 
 ## run crawler (missed 1 param in his cmd)
-```timeout --signal KILL 4h node /p/Witcher/base/helpers/request_crawler/main.js http://$ipaddr/ $(pwd) ; ret=$?; if [ $ret -eq 137 ] || [ $ret -eq 124 ] || [ $ret -eq 0 ]; then mkdir -p ../ccov && find . -name '*.cc.json' -exec cp {} ../ccov \; && echo "Crawl reached completion "; fi```
+```timeout --signal KILL 4h node /p/Witcher/base/helpers/request_crawler/main.js request_crawler http://$ipaddr $(pwd) ; ret=$?; if [ $ret -eq 137 ] || [ $ret -eq 124 ] || [ $ret -eq 0 ]; then mkdir -p ../ccov && find . -name '*.cc.json' -exec cp {} ../ccov \; && echo "Crawl reached completion "; fi```
 
 # correct cmd
 
-```timeout --signal KILL 4h node /p/Witcher/base/helpers/request_crawler/main.js /p/Witcher/base/helpers/request_crawler http://$ipaddr/ $(pwd) ; ret=$?; if [ $ret -eq 137 ] || [ $ret -eq 124 ] || [ $ret -eq 0 ]; then mkdir -p ../ccov && find . -name '*.cc.json' -exec cp {} ../ccov \; && echo "Crawl reached completion "; fi```
+```timeout --signal KILL 4h node /p/Witcher/base/helpers/request_crawler/main.js request_crawler http://172.17.0.3/openemr/ $(pwd) ; ret=$?; if [ $ret -eq 137 ] || [ $ret -eq 124 ] || [ $ret -eq 0 ]; then mkdir -p ../ccov && find . -name '*.cc.json' -exec cp {} ../ccov \; && echo "Crawl reached completion "; fi```
 
 # fuzz app
 ```docker exec -it -w $(pwd) -u wc $cve-$plus bash -i -c 'p'```
