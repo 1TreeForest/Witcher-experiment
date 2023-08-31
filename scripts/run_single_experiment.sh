@@ -320,10 +320,10 @@ if [[ ${DO_CRAWL} = true ]]; then
         #timeout --signal KILL $(( $DURATION_SEC - $diff ))s  execute request_crawler http://$ipaddr$base_url_path "$(pwd)" &
         #--no-headless
         docker exec -it -w /helpers/request_crawler/  ${docker_container_name} touch /tmp/start_test.dat
-        echo docker exec -it -w /helpers/request_crawler/ -u wc  ${docker_container_name} bash -i -c '"'timeout --signal KILL $(( $DURATION_SEC - $diff ))s  node main.js request_crawler http://localhost$base_url_path $(pwd) --no-headless >> ${app_role_dpath}/crawler.log '"'
+        echo docker exec -it -w /helpers/request_crawler/ -u wc  ${docker_container_name} bash -i -c '"'timeout --signal KILL $(( $DURATION_SEC - $diff ))s  node main.js request_crawler http://localhost$base_url_path $(pwd) >> ${app_role_dpath}/crawler.log '"'
         set -x
         echo
-        docker exec -it -w /helpers/request_crawler/  -u wc ${docker_container_name} bash -i -c "timeout --signal KILL $(( $DURATION_SEC - $diff ))s  node main.js request_crawler http://localhost$base_url_path $(pwd) --no-headless  >> ${app_role_dpath}/crawler.log "
+        docker exec -it -w /helpers/request_crawler/  -u wc ${docker_container_name} bash -i -c "timeout --signal KILL $(( $DURATION_SEC - $diff ))s  node main.js request_crawler http://localhost$base_url_path $(pwd) >> ${app_role_dpath}/crawler.log "
         set +x
         exit 99
         docker exec -it -w /helpers/request_crawler/  ${docker_container_name} rm /tmp/coverages/execs.json

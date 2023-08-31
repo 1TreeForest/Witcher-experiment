@@ -1,0 +1,3162 @@
+docker exec -it -w /helpers/request_crawler/ -u wc openemr-user bash -i -c "timeout --signal KILL 14398s node main.js request_crawler http://localhost/openemr/portal /p/Witcher-experiment/interpreter-targets/openemr/user --no-headless "
+[
+  '/home/wc/.nvm/versions/node/v17.2.0/bin/node',
+  '/helpers/request_crawler/main.js',
+  'request_crawler',
+  'http://localhost/openemr/portal',
+  '/p/Witcher-experiment/interpreter-targets/openemr/user',
+  '--no-headless'
+]
+***************** No saved data found **************************
+Started worker  0
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+[38;5;28mhttp://localhost/openemr/portal, [38;5;11m0[0m
+
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+[ 'GET http://localhost/openemr/portal ' ]
+[[38;5;5mWC[0m] Browser launching with  url=http://localhost/openemr/portal 
+[WC] Performing login http://172.17.0.3/openemr/portal
+[Login] REQUESTING URL  http://172.17.0.3/openemr/portal
+[Login] URL GOTO'ed 
+<!DOCTYPE html><html><head>
+    <title>Patient Portal Login</title>
+    
+<link rel="stylesheet" href="/openemr/public/assets/bootstrap-3-3-4/dist/css/bootstrap.min.css?v=41" type="text/css">
+<link rel="stylesheet" href="?v=41" type="text/css">
+<link rel="stylesheet" href="/openemr/public/assets/font-awesome-4-6-3/css/font-awesome.min.css?v=41" type="text/css">
+<link rel="stylesheet" href="/openemr/public/assets/jquery-datetimepicker-2-5-4/build/jquery.datetimepicker.min.css?v=41" type="text/css">
+
+<script type="text/javascript" src="/openemr/public/assets/jquery-min-3-1-1/index.js?v=41"></script>
+<script type="text/javascript" src="/openemr/public/assets/bootstrap-3-3-4/dist/js/bootstrap.min.js?v=41"></script>
+<script type="text/javascript" src="/openemr/public/assets/jquery-datetimepicker-2-5-4/build/jquery.datetimepicker.full.min.js?v=41"></script>
+<script type="text/javascript" src="/openemr/library/textformat.js?v=41"></script>
+<script type="text/javascript" src="/openemr/library/dialog.js?v=41"></script>
+
+    <script type="text/javascript" src="/openemr/public/assets/jquery.gritter-1-7-4/js/jquery.gritter.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/openemr/public/assets/jquery.gritter-1-7-4/css/jquery.gritter.css">
+    <script type="text/javascript" src="/openemr/public/assets/emodal-1-2-65/dist/eModal.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/base.css?v=41">
+    <link rel="stylesheet" type="text/css" href="assets/css/register.css?v=41">
+<script type="text/javascript">
+    function process() {
+        if (!(validate())) {
+            alert ('Field(s) are missing!');
+            return false;
+        }
+    }
+    function validate() {
+            var pass=true;
+        if (document.getElementById('uname').value == "") {
+        document.getElementById('uname').style.border = "1px solid red";
+                pass=false;
+        }
+        if (document.getElementById('pass').value == "") {
+        document.getElementById('pass').style.border = "1px solid red";
+                pass=false;
+        }
+            return pass;
+    }
+    function process_new_pass() {
+        if (!(validate_new_pass())) {
+            alert ('Field(s) are missing!');
+            return false;
+        }
+        if (document.getElementById('pass_new').value != document.getElementById('pass_new_confirm').value) {
+            alert ('The new password fields are not the same.');
+            return false;
+        }
+        if (document.getElementById('pass').value == document.getElementById('pass_new').value) {
+            alert ('The new password can not be the same as the current password.');
+            return false;
+        }
+    }
+
+    function validate_new_pass() {
+        var pass=true;
+        if (document.getElementById('uname').value == "") {
+            document.getElementById('uname').style.border = "1px solid red";
+            pass=false;
+        }
+        if (document.getElementById('pass').value == "") {
+            document.getElementById('pass').style.border = "1px solid red";
+            pass=false;
+        }
+        if (document.getElementById('pass_new').value == "") {
+            document.getElementById('pass_new').style.border = "1px solid red";
+            pass=false;
+        }
+        if (document.getElementById('pass_new_confirm').value == "") {
+            document.getElementById('pass_new_confirm').style.border = "1px solid red";
+            pass=false;
+        }
+        return pass;
+    }
+</script>
+</head>
+<body class="skin-blue">
+<br><br>
+<div class="container text-center">
+      <!-- Main logon -->
+    <div id="wrapper" class="row centerwrapper text-center">
+    <img style="width:65%" src="/openemr/public/images/login-logo.png">
+    <form class="form-inline text-center" action="get_patient_info.php" method="POST" onsubmit="return process()">
+        <div class="row">
+                <div class="col-sm-12 text-center">
+                    <fieldset>
+                        <legend class="bg-primary"><h3>Patient Portal Login</h3></legend>
+                        <div class="well">
+                        <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group inline">
+                                        <label class="control-label" for="uname">Username</label>
+                                        <div class="controls inline-inputs">
+                                            <input type="text" class="form-control" name="uname" id="uname" autocomplete="on" required="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group inline">
+                                        <label class="control-label" for="pass">Password</label>
+                                        <div class="controls inline-inputs">
+                                            <input class="form-control" name="pass" id="pass" type="password" required="" autocomplete="on">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 form-group">
+                                    <label class="control-label" for="passaddon">E-Mail Address</label>
+                                    <div class="controls inline-inputs">
+                                        <input class="form-control" style="width: 100%" name="passaddon" id="passaddon" placeholder="on file email" type="email" autocomplete="on" value="e@mail.com">
+                                    </div>
+                                </div>
+                            </div>
+                                                                        <div class="form-group row">
+                            <label for="selLanguage">Language</label>
+                            <select class="form-control" id="selLanguage" name="languageChoice">
+                            <option selected="selected" value="1">Default - English (Standard)</option>
+<option value="27">Albanian</option>
+<option value="19">Arabic</option>
+<option value="13">Armenian</option>
+<option value="14">Bahasa Indonesia</option>
+<option value="10">Chinese (Simplified)</option>
+<option value="11">Chinese (Traditional)</option>
+<option value="28">Czech</option>
+<option value="20">Danish</option>
+<option value="6">Dutch</option>
+<option value="16">English (Indian)</option>
+<option value="1">English (Standard)</option>
+<option value="32">Finnish</option>
+<option value="9">French (Canadian)</option>
+<option value="8">French (Standard)</option>
+<option value="5">German</option>
+<option value="15">Greek</option>
+<option value="7">Hebrew</option>
+<option value="24">Hindi</option>
+<option value="23">Italian</option>
+<option value="31">Japanese</option>
+<option value="33">Marathi</option>
+<option value="30">Persian</option>
+<option value="22">Polish</option>
+<option value="18">Portuguese (Brazilian)</option>
+<option value="17">Portuguese (European)</option>
+<option value="25">Romanian</option>
+<option value="12">Russian</option>
+<option value="4">Spanish (Latin American)</option>
+<option value="3">Spanish (Spain)</option>
+<option value="2">Swedish</option>
+<option value="34">Tamil</option>
+<option value="21">Turkish</option>
+<option value="29">Ukrainian</option>
+<option value="26">Vietnamese</option>
+                          </select>
+                        </div>
+                                                </div>
+                        <div class="col-sm-12 col-md-12">
+                                                            <button class="btn btn-default pull-left" onclick="location.replace('./account/register.php')">Register</button>
+                                                                                        <button class="btn btn-success pull-right" type="submit">Log In</button>
+                        </div>
+                    </fieldset>
+                </div>
+          </div>
+                </form>
+    </div><!-- div wrapper -->
+     <!--  logon wrapper -->
+</div><!-- container -->
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+
+return false;
+});
+/* Test Data
+$("#emailInput").val("me@me.com");
+$("#fname").val("Jerry");
+$("#lname").val("Padgett");
+$("#dob").val("1919-03-03"); */
+
+function callServer(action, value, value2, last, first) {
+    var data = {
+        'action' : action,
+        'value' : value,
+        'dob' : $("#dob").val(),
+        'last' : $("#lname").val(),
+        'first' : $("#fname").val(),
+        'email' : $("#emailInput").val()
+    }
+    if (action == 'do_signup') {
+        data = {
+            'action': action,
+            'pid': value
+        };
+    }
+    else if (action == 'notify_admin') {
+        data = {
+            'action': action,
+            'pid': value,
+            'provider': value2
+        };
+    }
+    else if (action == 'cleanup') {
+        data = {
+            'action': action
+        }
+    };
+    $.ajax({
+        type : 'GET',
+        url : './account/account.php',
+        data : data
+    }).done(function (rtn) {
+        if (action == "cleanup") {
+            window.location.href = "./index.php" // Goto landing page.
+        }
+        else if (action == "is_new") {
+            if (parseInt(rtn) > 0) {
+                var yes = confirm('Account is validated. Send new credentials?');
+                if(!yes)
+                    callServer('cleanup');
+                else
+                    callServer('do_signup', parseInt(rtn));
+            }
+            else {
+                // After error alert app exit to landing page.
+                var message = "Unable to find your records. Be sure to use your correct Dob, First and Last name and Email of record. If you have opted out of email with none on file then leave blank.";
+                eModal.alert(message);
+            }
+        }
+        else if (action == 'do_signup') {
+            if (rtn == "") {
+                var message = "Unable to either create credentials or send email.";
+                alert(message);
+                return false;
+            }
+            //alert(rtn); // sync alert.. rtn holds username and password for testing.
+            var message = "Your new credentials have been sent. Check your email inbox and also possibly your spam folder. Once you log into your patient portal feel free to make an appointment or send us a secure message. We look forward to seeing you soon."
+            eModal.alert(message); // This is an async call. The modal close event exits us to portal landing page after cleanup.
+        }
+    }).fail(function (err) {
+        var message = "Something went wrong.";
+        alert(message);
+    });
+}
+</script>
+
+
+</body></html>
+CRITICAL ERROR: login failed
+[Error: ENOENT: no such file or directory, open '/p/tmp/screenshot-pre-login.png'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/p/tmp/screenshot-pre-login.png'
+}
+Error: ENOENT: no such file or directory, open '/p/tmp/screenshot-pre-login.png'
+docker exec -it -w /helpers/request_crawler/ -u wc openemr-user bash -i -c "timeout --signal KILL 14398s node main.js request_crawler http://localhost/openemr/portal /p/Witcher-experiment/interpreter-targets/openemr/user --no-headless "
+[
+  '/home/wc/.nvm/versions/node/v17.2.0/bin/node',
+  '/helpers/request_crawler/main.js',
+  'request_crawler',
+  'http://localhost/openemr/portal',
+  '/p/Witcher-experiment/interpreter-targets/openemr/user',
+  '--no-headless'
+]
+ ************************* LOADING INCOMING ******************************
+ -- GET http://localhost/openemr/portal urllen=31 postlen=0 -- 
+Started worker  0
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+[38;5;28mhttp://localhost/openemr/portal, [38;5;11m1[0m
+
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+[ 'GET http://localhost/openemr/portal ' ]
+CURRENT ROUND VALUE HAS INCREASED TO  2
+[ 'GET http://localhost/openemr/portal ' ]
+[[38;5;5mWC[0m] Browser launching with  url=http://localhost/openemr/portal 
+[WC] Performing login http://172.17.0.3/openemr/portal
+[Login] REQUESTING URL  http://172.17.0.3/openemr/portal
+[Login] URL GOTO'ed 
+<!DOCTYPE html><html><head>
+    <title>Patient Portal Login</title>
+    
+<link rel="stylesheet" href="/openemr/public/assets/bootstrap-3-3-4/dist/css/bootstrap.min.css?v=41" type="text/css">
+<link rel="stylesheet" href="?v=41" type="text/css">
+<link rel="stylesheet" href="/openemr/public/assets/font-awesome-4-6-3/css/font-awesome.min.css?v=41" type="text/css">
+<link rel="stylesheet" href="/openemr/public/assets/jquery-datetimepicker-2-5-4/build/jquery.datetimepicker.min.css?v=41" type="text/css">
+
+<script type="text/javascript" src="/openemr/public/assets/jquery-min-3-1-1/index.js?v=41"></script>
+<script type="text/javascript" src="/openemr/public/assets/bootstrap-3-3-4/dist/js/bootstrap.min.js?v=41"></script>
+<script type="text/javascript" src="/openemr/public/assets/jquery-datetimepicker-2-5-4/build/jquery.datetimepicker.full.min.js?v=41"></script>
+<script type="text/javascript" src="/openemr/library/textformat.js?v=41"></script>
+<script type="text/javascript" src="/openemr/library/dialog.js?v=41"></script>
+
+    <script type="text/javascript" src="/openemr/public/assets/jquery.gritter-1-7-4/js/jquery.gritter.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/openemr/public/assets/jquery.gritter-1-7-4/css/jquery.gritter.css">
+    <script type="text/javascript" src="/openemr/public/assets/emodal-1-2-65/dist/eModal.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/base.css?v=41">
+    <link rel="stylesheet" type="text/css" href="assets/css/register.css?v=41">
+<script type="text/javascript">
+    function process() {
+        if (!(validate())) {
+            alert ('Field(s) are missing!');
+            return false;
+        }
+    }
+    function validate() {
+            var pass=true;
+        if (document.getElementById('uname').value == "") {
+        document.getElementById('uname').style.border = "1px solid red";
+                pass=false;
+        }
+        if (document.getElementById('pass').value == "") {
+        document.getElementById('pass').style.border = "1px solid red";
+                pass=false;
+        }
+            return pass;
+    }
+    function process_new_pass() {
+        if (!(validate_new_pass())) {
+            alert ('Field(s) are missing!');
+            return false;
+        }
+        if (document.getElementById('pass_new').value != document.getElementById('pass_new_confirm').value) {
+            alert ('The new password fields are not the same.');
+            return false;
+        }
+        if (document.getElementById('pass').value == document.getElementById('pass_new').value) {
+            alert ('The new password can not be the same as the current password.');
+            return false;
+        }
+    }
+
+    function validate_new_pass() {
+        var pass=true;
+        if (document.getElementById('uname').value == "") {
+            document.getElementById('uname').style.border = "1px solid red";
+            pass=false;
+        }
+        if (document.getElementById('pass').value == "") {
+            document.getElementById('pass').style.border = "1px solid red";
+            pass=false;
+        }
+        if (document.getElementById('pass_new').value == "") {
+            document.getElementById('pass_new').style.border = "1px solid red";
+            pass=false;
+        }
+        if (document.getElementById('pass_new_confirm').value == "") {
+            document.getElementById('pass_new_confirm').style.border = "1px solid red";
+            pass=false;
+        }
+        return pass;
+    }
+</script>
+</head>
+<body class="skin-blue">
+<br><br>
+<div class="container text-center">
+      <!-- Main logon -->
+    <div id="wrapper" class="row centerwrapper text-center">
+    <img style="width:65%" src="/openemr/public/images/login-logo.png">
+    <form class="form-inline text-center" action="get_patient_info.php" method="POST" onsubmit="return process()">
+        <div class="row">
+                <div class="col-sm-12 text-center">
+                    <fieldset>
+                        <legend class="bg-primary"><h3>Patient Portal Login</h3></legend>
+                        <div class="well">
+                        <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group inline">
+                                        <label class="control-label" for="uname">Username</label>
+                                        <div class="controls inline-inputs">
+                                            <input type="text" class="form-control" name="uname" id="uname" autocomplete="on" required="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group inline">
+                                        <label class="control-label" for="pass">Password</label>
+                                        <div class="controls inline-inputs">
+                                            <input class="form-control" name="pass" id="pass" type="password" required="" autocomplete="on">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 form-group">
+                                    <label class="control-label" for="passaddon">E-Mail Address</label>
+                                    <div class="controls inline-inputs">
+                                        <input class="form-control" style="width: 100%" name="passaddon" id="passaddon" placeholder="on file email" type="email" autocomplete="on" value="e@mail.com">
+                                    </div>
+                                </div>
+                            </div>
+                                                                        <div class="form-group row">
+                            <label for="selLanguage">Language</label>
+                            <select class="form-control" id="selLanguage" name="languageChoice">
+                            <option selected="selected" value="1">Default - English (Standard)</option>
+<option value="27">Albanian</option>
+<option value="19">Arabic</option>
+<option value="13">Armenian</option>
+<option value="14">Bahasa Indonesia</option>
+<option value="10">Chinese (Simplified)</option>
+<option value="11">Chinese (Traditional)</option>
+<option value="28">Czech</option>
+<option value="20">Danish</option>
+<option value="6">Dutch</option>
+<option value="16">English (Indian)</option>
+<option value="1">English (Standard)</option>
+<option value="32">Finnish</option>
+<option value="9">French (Canadian)</option>
+<option value="8">French (Standard)</option>
+<option value="5">German</option>
+<option value="15">Greek</option>
+<option value="7">Hebrew</option>
+<option value="24">Hindi</option>
+<option value="23">Italian</option>
+<option value="31">Japanese</option>
+<option value="33">Marathi</option>
+<option value="30">Persian</option>
+<option value="22">Polish</option>
+<option value="18">Portuguese (Brazilian)</option>
+<option value="17">Portuguese (European)</option>
+<option value="25">Romanian</option>
+<option value="12">Russian</option>
+<option value="4">Spanish (Latin American)</option>
+<option value="3">Spanish (Spain)</option>
+<option value="2">Swedish</option>
+<option value="34">Tamil</option>
+<option value="21">Turkish</option>
+<option value="29">Ukrainian</option>
+<option value="26">Vietnamese</option>
+                          </select>
+                        </div>
+                                                </div>
+                        <div class="col-sm-12 col-md-12">
+                                                            <button class="btn btn-default pull-left" onclick="location.replace('./account/register.php')">Register</button>
+                                                                                        <button class="btn btn-success pull-right" type="submit">Log In</button>
+                        </div>
+                    </fieldset>
+                </div>
+          </div>
+                </form>
+    </div><!-- div wrapper -->
+     <!--  logon wrapper -->
+</div><!-- container -->
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+
+return false;
+});
+/* Test Data
+$("#emailInput").val("me@me.com");
+$("#fname").val("Jerry");
+$("#lname").val("Padgett");
+$("#dob").val("1919-03-03"); */
+
+function callServer(action, value, value2, last, first) {
+    var data = {
+        'action' : action,
+        'value' : value,
+        'dob' : $("#dob").val(),
+        'last' : $("#lname").val(),
+        'first' : $("#fname").val(),
+        'email' : $("#emailInput").val()
+    }
+    if (action == 'do_signup') {
+        data = {
+            'action': action,
+            'pid': value
+        };
+    }
+    else if (action == 'notify_admin') {
+        data = {
+            'action': action,
+            'pid': value,
+            'provider': value2
+        };
+    }
+    else if (action == 'cleanup') {
+        data = {
+            'action': action
+        }
+    };
+    $.ajax({
+        type : 'GET',
+        url : './account/account.php',
+        data : data
+    }).done(function (rtn) {
+        if (action == "cleanup") {
+            window.location.href = "./index.php" // Goto landing page.
+        }
+        else if (action == "is_new") {
+            if (parseInt(rtn) > 0) {
+                var yes = confirm('Account is validated. Send new credentials?');
+                if(!yes)
+                    callServer('cleanup');
+                else
+                    callServer('do_signup', parseInt(rtn));
+            }
+            else {
+                // After error alert app exit to landing page.
+                var message = "Unable to find your records. Be sure to use your correct Dob, First and Last name and Email of record. If you have opted out of email with none on file then leave blank.";
+                eModal.alert(message);
+            }
+        }
+        else if (action == 'do_signup') {
+            if (rtn == "") {
+                var message = "Unable to either create credentials or send email.";
+                alert(message);
+                return false;
+            }
+            //alert(rtn); // sync alert.. rtn holds username and password for testing.
+            var message = "Your new credentials have been sent. Check your email inbox and also possibly your spam folder. Once you log into your patient portal feel free to make an appointment or send us a secure message. We look forward to seeing you soon."
+            eModal.alert(message); // This is an async call. The modal close event exits us to portal landing page after cleanup.
+        }
+    }).fail(function (err) {
+        var message = "Something went wrong.";
+        alert(message);
+    });
+}
+</script>
+
+
+</body></html>
+CRITICAL ERROR: login failed
+[Error: ENOENT: no such file or directory, open '/p/tmp/screenshot-pre-login.png'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/p/tmp/screenshot-pre-login.png'
+}
+Error: ENOENT: no such file or directory, open '/p/tmp/screenshot-pre-login.png'
+docker exec -it -w /helpers/request_crawler/ -u wc openemr-user bash -i -c "timeout --signal KILL 14398s node main.js request_crawler http://localhost/openemr/portal /p/Witcher-experiment/interpreter-targets/openemr/user --no-headless "
+[
+  '/home/wc/.nvm/versions/node/v17.2.0/bin/node',
+  '/helpers/request_crawler/main.js',
+  'request_crawler',
+  'http://localhost/openemr/portal',
+  '/p/Witcher-experiment/interpreter-targets/openemr/user',
+  '--no-headless'
+]
+ ************************* LOADING INCOMING ******************************
+ -- GET http://localhost/openemr/portal urllen=31 postlen=0 -- 
+Started worker  0
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+[38;5;28mhttp://localhost/openemr/portal, [38;5;11m2[0m
+
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+[ 'GET http://localhost/openemr/portal ' ]
+CURRENT ROUND VALUE HAS INCREASED TO  2
+[ 'GET http://localhost/openemr/portal ' ]
+CURRENT ROUND VALUE HAS INCREASED TO  3
+[ 'GET http://localhost/openemr/portal ' ]
+[[38;5;5mWC[0m] Browser launching with  url=http://localhost/openemr/portal 
+[WC] Performing login http://172.17.0.3/openemr/portal
+[Login] REQUESTING URL  http://172.17.0.3/openemr/portal
+[Login] URL GOTO'ed 
+<!DOCTYPE html><html><head>
+    <title>Patient Portal Login</title>
+    
+<link rel="stylesheet" href="/openemr/public/assets/bootstrap-3-3-4/dist/css/bootstrap.min.css?v=41" type="text/css">
+<link rel="stylesheet" href="?v=41" type="text/css">
+<link rel="stylesheet" href="/openemr/public/assets/font-awesome-4-6-3/css/font-awesome.min.css?v=41" type="text/css">
+<link rel="stylesheet" href="/openemr/public/assets/jquery-datetimepicker-2-5-4/build/jquery.datetimepicker.min.css?v=41" type="text/css">
+
+<script type="text/javascript" src="/openemr/public/assets/jquery-min-3-1-1/index.js?v=41"></script>
+<script type="text/javascript" src="/openemr/public/assets/bootstrap-3-3-4/dist/js/bootstrap.min.js?v=41"></script>
+<script type="text/javascript" src="/openemr/public/assets/jquery-datetimepicker-2-5-4/build/jquery.datetimepicker.full.min.js?v=41"></script>
+<script type="text/javascript" src="/openemr/library/textformat.js?v=41"></script>
+<script type="text/javascript" src="/openemr/library/dialog.js?v=41"></script>
+
+    <script type="text/javascript" src="/openemr/public/assets/jquery.gritter-1-7-4/js/jquery.gritter.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/openemr/public/assets/jquery.gritter-1-7-4/css/jquery.gritter.css">
+    <script type="text/javascript" src="/openemr/public/assets/emodal-1-2-65/dist/eModal.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/base.css?v=41">
+    <link rel="stylesheet" type="text/css" href="assets/css/register.css?v=41">
+<script type="text/javascript">
+    function process() {
+        if (!(validate())) {
+            alert ('Field(s) are missing!');
+            return false;
+        }
+    }
+    function validate() {
+            var pass=true;
+        if (document.getElementById('uname').value == "") {
+        document.getElementById('uname').style.border = "1px solid red";
+                pass=false;
+        }
+        if (document.getElementById('pass').value == "") {
+        document.getElementById('pass').style.border = "1px solid red";
+                pass=false;
+        }
+            return pass;
+    }
+    function process_new_pass() {
+        if (!(validate_new_pass())) {
+            alert ('Field(s) are missing!');
+            return false;
+        }
+        if (document.getElementById('pass_new').value != document.getElementById('pass_new_confirm').value) {
+            alert ('The new password fields are not the same.');
+            return false;
+        }
+        if (document.getElementById('pass').value == document.getElementById('pass_new').value) {
+            alert ('The new password can not be the same as the current password.');
+            return false;
+        }
+    }
+
+    function validate_new_pass() {
+        var pass=true;
+        if (document.getElementById('uname').value == "") {
+            document.getElementById('uname').style.border = "1px solid red";
+            pass=false;
+        }
+        if (document.getElementById('pass').value == "") {
+            document.getElementById('pass').style.border = "1px solid red";
+            pass=false;
+        }
+        if (document.getElementById('pass_new').value == "") {
+            document.getElementById('pass_new').style.border = "1px solid red";
+            pass=false;
+        }
+        if (document.getElementById('pass_new_confirm').value == "") {
+            document.getElementById('pass_new_confirm').style.border = "1px solid red";
+            pass=false;
+        }
+        return pass;
+    }
+</script>
+</head>
+<body class="skin-blue">
+<br><br>
+<div class="container text-center">
+      <!-- Main logon -->
+    <div id="wrapper" class="row centerwrapper text-center">
+    <img style="width:65%" src="/openemr/public/images/login-logo.png">
+    <form class="form-inline text-center" action="get_patient_info.php" method="POST" onsubmit="return process()">
+        <div class="row">
+                <div class="col-sm-12 text-center">
+                    <fieldset>
+                        <legend class="bg-primary"><h3>Patient Portal Login</h3></legend>
+                        <div class="well">
+                        <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group inline">
+                                        <label class="control-label" for="uname">Username</label>
+                                        <div class="controls inline-inputs">
+                                            <input type="text" class="form-control" name="uname" id="uname" autocomplete="on" required="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group inline">
+                                        <label class="control-label" for="pass">Password</label>
+                                        <div class="controls inline-inputs">
+                                            <input class="form-control" name="pass" id="pass" type="password" required="" autocomplete="on">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 form-group">
+                                    <label class="control-label" for="passaddon">E-Mail Address</label>
+                                    <div class="controls inline-inputs">
+                                        <input class="form-control" style="width: 100%" name="passaddon" id="passaddon" placeholder="on file email" type="email" autocomplete="on" value="e@mail.com">
+                                    </div>
+                                </div>
+                            </div>
+                                                                        <div class="form-group row">
+                            <label for="selLanguage">Language</label>
+                            <select class="form-control" id="selLanguage" name="languageChoice">
+                            <option selected="selected" value="1">Default - English (Standard)</option>
+<option value="27">Albanian</option>
+<option value="19">Arabic</option>
+<option value="13">Armenian</option>
+<option value="14">Bahasa Indonesia</option>
+<option value="10">Chinese (Simplified)</option>
+<option value="11">Chinese (Traditional)</option>
+<option value="28">Czech</option>
+<option value="20">Danish</option>
+<option value="6">Dutch</option>
+<option value="16">English (Indian)</option>
+<option value="1">English (Standard)</option>
+<option value="32">Finnish</option>
+<option value="9">French (Canadian)</option>
+<option value="8">French (Standard)</option>
+<option value="5">German</option>
+<option value="15">Greek</option>
+<option value="7">Hebrew</option>
+<option value="24">Hindi</option>
+<option value="23">Italian</option>
+<option value="31">Japanese</option>
+<option value="33">Marathi</option>
+<option value="30">Persian</option>
+<option value="22">Polish</option>
+<option value="18">Portuguese (Brazilian)</option>
+<option value="17">Portuguese (European)</option>
+<option value="25">Romanian</option>
+<option value="12">Russian</option>
+<option value="4">Spanish (Latin American)</option>
+<option value="3">Spanish (Spain)</option>
+<option value="2">Swedish</option>
+<option value="34">Tamil</option>
+<option value="21">Turkish</option>
+<option value="29">Ukrainian</option>
+<option value="26">Vietnamese</option>
+                          </select>
+                        </div>
+                                                </div>
+                        <div class="col-sm-12 col-md-12">
+                                                            <button class="btn btn-default pull-left" onclick="location.replace('./account/register.php')">Register</button>
+                                                                                        <button class="btn btn-success pull-right" type="submit">Log In</button>
+                        </div>
+                    </fieldset>
+                </div>
+          </div>
+                </form>
+    </div><!-- div wrapper -->
+     <!--  logon wrapper -->
+</div><!-- container -->
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+
+return false;
+});
+/* Test Data
+$("#emailInput").val("me@me.com");
+$("#fname").val("Jerry");
+$("#lname").val("Padgett");
+$("#dob").val("1919-03-03"); */
+
+function callServer(action, value, value2, last, first) {
+    var data = {
+        'action' : action,
+        'value' : value,
+        'dob' : $("#dob").val(),
+        'last' : $("#lname").val(),
+        'first' : $("#fname").val(),
+        'email' : $("#emailInput").val()
+    }
+    if (action == 'do_signup') {
+        data = {
+            'action': action,
+            'pid': value
+        };
+    }
+    else if (action == 'notify_admin') {
+        data = {
+            'action': action,
+            'pid': value,
+            'provider': value2
+        };
+    }
+    else if (action == 'cleanup') {
+        data = {
+            'action': action
+        }
+    };
+    $.ajax({
+        type : 'GET',
+        url : './account/account.php',
+        data : data
+    }).done(function (rtn) {
+        if (action == "cleanup") {
+            window.location.href = "./index.php" // Goto landing page.
+        }
+        else if (action == "is_new") {
+            if (parseInt(rtn) > 0) {
+                var yes = confirm('Account is validated. Send new credentials?');
+                if(!yes)
+                    callServer('cleanup');
+                else
+                    callServer('do_signup', parseInt(rtn));
+            }
+            else {
+                // After error alert app exit to landing page.
+                var message = "Unable to find your records. Be sure to use your correct Dob, First and Last name and Email of record. If you have opted out of email with none on file then leave blank.";
+                eModal.alert(message);
+            }
+        }
+        else if (action == 'do_signup') {
+            if (rtn == "") {
+                var message = "Unable to either create credentials or send email.";
+                alert(message);
+                return false;
+            }
+            //alert(rtn); // sync alert.. rtn holds username and password for testing.
+            var message = "Your new credentials have been sent. Check your email inbox and also possibly your spam folder. Once you log into your patient portal feel free to make an appointment or send us a secure message. We look forward to seeing you soon."
+            eModal.alert(message); // This is an async call. The modal close event exits us to portal landing page after cleanup.
+        }
+    }).fail(function (err) {
+        var message = "Something went wrong.";
+        alert(message);
+    });
+}
+</script>
+
+
+</body></html>
+CRITICAL ERROR: login failed
+[Error: ENOENT: no such file or directory, open '/p/tmp/screenshot-pre-login.png'] {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'open',
+  path: '/p/tmp/screenshot-pre-login.png'
+}
+Error: ENOENT: no such file or directory, open '/p/tmp/screenshot-pre-login.png'
+docker exec -it -w /helpers/request_crawler/ -u wc openemr-user bash -i -c "timeout --signal KILL 14398s node main.js request_crawler http://localhost/openemr/portal /p/Witcher-experiment/interpreter-targets/openemr/user --no-headless "
+[
+  '/home/wc/.nvm/versions/node/v17.2.0/bin/node',
+  '/helpers/request_crawler/main.js',
+  'request_crawler',
+  'http://localhost/openemr/portal',
+  '/p/Witcher-experiment/interpreter-targets/openemr/user',
+  '--no-headless'
+]
+***************** No saved data found **************************
+Started worker  0
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+[38;5;28mhttp://localhost/openemr/portal, [38;5;11m0[0m
+
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+[ 'GET http://localhost/openemr/portal ' ]
+[[38;5;5mWC[0m] Browser launching with  url=http://localhost/openemr/portal 
+[WC] Performing login http://172.17.0.3/openemr/portal
+[Login] REQUESTING URL  http://172.17.0.3/openemr/portal
+[Login] URL GOTO'ed 
+[[38;5;2mWC[0m] [38;5;2m ADDED [0m--  -- GET http://172.17.0.3/openemr/portal/home.php urllen=41 postlen=0 --  [0m
+[[38;5;5mWC[0m] Cookie: PHPSESSID=cu20s38fkmk1g0vhph0de49m19
+[[38;5;5mWC[0m] Cookie: OpenEMR=2ah75bheblche2hugueaofa7fu
+[WC] adding processRequest for http://172.17.0.3/openemr/portal/messaging/secure_chat.php
+[WC] adding processRequest for http://172.17.0.3/openemr/portal/report/pat_ledger.php?form=1&patient_id=1
+GOING TO requested page = http://localhost/openemr/portal
+[38;5;5mprocessRequest caught to add method and data and continueing [0m http://localhost/openemr/portal
+[WC] Intercepted in processRequest  http://localhost/openemr/portal/ GET
+[[38;5;2mWC[0m] [38;5;2m ADDED [0m-- InterceptedRequest -- GET http://localhost/openemr/portal/ urllen=32 postlen=0 --  [0m
+Caught exception: TypeError: fRequest.getRequestKey is not a function
+TypeError: fRequest.getRequestKey is not a function
+    at AppData.addRequest (file:///helpers/request_crawler/input_sifter2.js:423:31)
+    at processRequest (file:///helpers/request_crawler/input_sifter2.js:2509:47)
+    at /helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:219:52
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async HTTPRequest.finalizeInterceptions (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/HTTPRequest.js:133:9)
+Error: Browser cannot connect to 'http://localhost/openemr/portal' RETRYING
+TimeoutError: Navigation timeout of 20000 ms exceeded
+    at /helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:107:111
+    at async FrameManager.navigateFrame (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:130:21)
+    at async Frame.goto (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:500:16)
+    at async Page.goto (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1167:16)
+    at async RequestExplorer.exerciseTarget (file:///helpers/request_crawler/input_sifter2.js:1802:32)
+    at async RequestExplorer.start (file:///helpers/request_crawler/input_sifter2.js:2697:17)
+    at async explorationWorker (file:///helpers/request_crawler/main.js:143:9)
+GOING TO requested page = http://localhost/openemr/portal
+[38;5;5mprocessRequest caught to add method and data and continueing [0m http://localhost/openemr/portal
+[WC] Intercepted in processRequest  http://localhost/openemr/portal/ GET
+Caught exception: TypeError: fRequest.getRequestKey is not a function
+TypeError: fRequest.getRequestKey is not a function
+    at AppData.addRequest (file:///helpers/request_crawler/input_sifter2.js:423:31)
+    at processRequest (file:///helpers/request_crawler/input_sifter2.js:2509:47)
+    at /helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:219:52
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async HTTPRequest.finalizeInterceptions (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/HTTPRequest.js:133:9)
+Error: Browser cannot connect to 'http://localhost/openemr/portal' RETRYING
+TimeoutError: Navigation timeout of 20000 ms exceeded
+    at /helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:107:111
+    at async FrameManager.navigateFrame (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:130:21)
+    at async Frame.goto (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:500:16)
+    at async Page.goto (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1167:16)
+    at async RequestExplorer.exerciseTarget (file:///helpers/request_crawler/input_sifter2.js:1802:32)
+    at async RequestExplorer.start (file:///helpers/request_crawler/input_sifter2.js:2697:17)
+    at async explorationWorker (file:///helpers/request_crawler/main.js:143:9)
+GOING TO requested page = http://localhost/openemr/portal
+[38;5;5mprocessRequest caught to add method and data and continueing [0m http://localhost/openemr/portal
+[WC] Intercepted in processRequest  http://localhost/openemr/portal/ GET
+Caught exception: TypeError: fRequest.getRequestKey is not a function
+TypeError: fRequest.getRequestKey is not a function
+    at AppData.addRequest (file:///helpers/request_crawler/input_sifter2.js:423:31)
+    at processRequest (file:///helpers/request_crawler/input_sifter2.js:2509:47)
+    at /helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:219:52
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async HTTPRequest.finalizeInterceptions (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/HTTPRequest.js:133:9)
+I think we are STUCKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+Broswer should have closed by now
+Error: Browser cannot connect to 'http://localhost/openemr/portal' RETRYING
+ProtocolError: Protocol error (Page.navigate): Target closed.
+    at /helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/Connection.js:226:24
+    at new Promise (<anonymous>)
+    at CDPSession.send (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/Connection.js:222:16)
+    at navigate (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:148:47)
+    at FrameManager.navigateFrame (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:131:13)
+    at Frame.goto (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:500:41)
+    at Page.goto (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1167:53)
+    at RequestExplorer.exerciseTarget (file:///helpers/request_crawler/input_sifter2.js:1802:43)
+    at async RequestExplorer.start (file:///helpers/request_crawler/input_sifter2.js:2697:17)
+    at async explorationWorker (file:///helpers/request_crawler/main.js:143:9)
+Error: LAST ATTEMPT, giving up, browser cannot connect to 'http://localhost/openemr/portal'
+[WC] Round Results for round 1 of 3: Total Inputs :  4 Total Requests: 1 of 3 processed so far
+[WC] [38;5;10mRemoving page timer for browser [0m
+[38;5;12m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Completed http://localhost/openemr/portal ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ [0m
+
+[
+  'GET http://localhost/openemr/portal ',
+  'GET http://172.17.0.3/openemr/portal/home.php ',
+  'GET http://localhost/openemr/portal/ '
+]
+[[38;5;5mWC[0m] Browser launching with  url=http://172.17.0.3/openemr/portal/home.php 
+[WC] Performing login http://172.17.0.3/openemr/portal
+[Login] REQUESTING URL  http://172.17.0.3/openemr/portal
+[Login] URL GOTO'ed 
+[[38;5;5mWC[0m] Cookie: PHPSESSID=a9pddbnquishd4ov8imkfql6lj
+[[38;5;5mWC[0m] Cookie: OpenEMR=j6s1vurnoe6tmq1jh2g6vjc1pn
+[WC] adding processRequest for http://172.17.0.3/openemr/portal/messaging/secure_chat.php
+[WC] adding processRequest for http://172.17.0.3/openemr/portal/report/pat_ledger.php?form=1&patient_id=1
+GOING TO requested page = http://172.17.0.3/openemr/portal/home.php
+[38;5;5mprocessRequest caught to add method and data and continueing [0m http://172.17.0.3/openemr/portal/home.php
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/public/assets/bootstrap-3-3-4/dist/css/bootstrap.min.css?v=41 method= GET restype= stylesheet data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/public/assets/jquery-ui-1-12-1/themes/sunny/jquery-ui.min.css?v=41 method= GET restype= stylesheet data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/public/assets/font-awesome-4-6-3/css/font-awesome.min.css?v=41 method= GET restype= stylesheet data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/public/assets/jquery-datetimepicker-2-5-4/build/jquery.datetimepicker.min.css?v=41 method= GET restype= stylesheet data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/public/assets/jquery-min-3-1-1/index.js?v=41 method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/public/assets/bootstrap-3-3-4/dist/js/bootstrap.min.js?v=41 method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/public/assets/jquery-ui-1-12-1/jquery-ui.min.js?v=41 method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/public/assets/jquery-datetimepicker-2-5-4/build/jquery.datetimepicker.full.min.js?v=41 method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/library/textformat.js?v=41 method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/library/dialog.js?v=41 method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/public/assets/emodal-1-2-65/dist/eModal.min.js?v=41 method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/interface/main/tabs/js/dialog_utils.js?v=41 method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/portal/assets/css/style.css?v=41 method= GET restype= stylesheet data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/portal/sign/css/signer.css?v=41 method= GET restype= stylesheet data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/portal/sign/assets/signpad.css?v=41 method= GET restype= stylesheet data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/portal/sign/assets/signpad.js?v=41 method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/portal/sign/assets/signer.js?v=41 method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/interface/themes/style_light.css?v=41 method= GET restype= stylesheet data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/public/assets/jquery-datetimepicker-2-5-4/build/jquery.datetimepicker.min.css method= GET restype= stylesheet data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/public/assets/jquery-min-3-1-1/index.js method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/library/js/common.js?v=41 method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/public/assets/jquery-datetimepicker-2-5-4/build/jquery.datetimepicker.full.min.js method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/interface/themes/core.css method= GET restype= stylesheet data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/public/assets/jquery-min-1-11-3/index.js method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/public/assets/bootstrap-3-3-4/dist/css/bootstrap.min.css method= GET restype= stylesheet data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/public/assets/bootstrap-3-3-4/dist/js/bootstrap.min.js method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/public/assets/summernote-0-8-2/dist/summernote.css method= GET restype= stylesheet data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/public/assets/summernote-0-8-2/dist/summernote.js method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/public/assets/angular-1-5-8/angular.min.js method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/public/assets/angular-summernote-0-8-1/dist/angular-summernote.js method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/public/assets/angular-sanitize-1-5-8/angular-sanitize.min.js method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/public/assets/checklist-model-0-10-0/checklist-model.js method= GET restype= script data= undefined
+[WC] status =  200 OK http://172.17.0.3/openemr/portal/home.php
+loading gremscript from local 
+[WC] adding hasClicker to elements
+[WC] second form ACTION= http://172.17.0.3/openemr/portal/messaging/secure_chat.php get  FROM url  http://172.17.0.3/openemr/portal/messaging/secure_chat.php
+[[38;5;2mWC[0m] [38;5;2m ADDED [0mPageForms -- GET http://172.17.0.3/openemr/portal/messaging/secure_chat.php urllen=58 postlen=5 --  postData==&=&= [0m
+[WC] second form ACTION= http://172.17.0.3/openemr/portal/messaging/secure_chat.php get  FROM url  http://172.17.0.3/openemr/portal/messaging/secure_chat.php
+CSS/JS Request Coming THROUGH!!!!!  http://172.17.0.3/openemr/library/textformat.js?v=41 method= GET restype= xhr data= undefined
+About to add code exercisers to page, u=First1 pw=password
+[WC] Alert OVERRIDE attaching script to [object HTMLHeadElement]
+[WC] ---------------- OVERRIDING window.alert ------------------------------
+[WC] usernameValue = First1 passwordValue = password
+[WC] Restarted Page -- going with Gremlins only
+[WC] Form Horde away!
+[WC] [38;5;10mReseting page timer [0m
+[WC] Starting timeout Loop #1 
+[[38;5;2mWC[0m] [38;5;2m ADDED [0mPageForms -- GET http://172.17.0.3/openemr/portal/messaging/secure_chat.php urllen=58 postlen=12 --  postData==&files=&=&= [0m
+[[38;5;2mWC[0m] [38;5;2m ADDED [0mPageForms -- GET http://172.17.0.3/openemr/portal/messaging/secure_chat.php urllen=58 postlen=25 --  postData==&files=&=http%3A%2F%2F&= [0m
+[[38;5;2mWC[0m] [38;5;2m ADDED [0mPageForms -- GET http://172.17.0.3/openemr/portal/messaging/secure_chat.php urllen=58 postlen=14 --  postData==&files=&=on&= [0m
+[WC] second form ACTION= http://172.17.0.3/openemr/portal/messaging/secure_chat.php get  FROM url  http://172.17.0.3/openemr/portal/messaging/secure_chat.php
+[WC] second form ACTION= http://172.17.0.3/openemr/portal/messaging/secure_chat.php get  FROM url  http://172.17.0.3/openemr/portal/messaging/secure_chat.php
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] searchForURLSelector starting.
+[WC] check element hash = JSHandle:undefined object
+[WC] cururl =  string http://172.17.0.3/openemr/portal/messaging/secure_chat.php false 
+
+[WC] second form ACTION= http://172.17.0.3/openemr/portal/messaging/secure_chat.php get  FROM url  http://172.17.0.3/openemr/portal/messaging/secure_chat.php
+[WC] link #0/16 completed
+[WC] cururl =  string http://172.17.0.3/openemr/portal/messaging/secure_chat.php false 
+
+[WC] link #1/16 completed
+[WC] cururl =  string http://172.17.0.3/openemr/portal/messaging/secure_chat.php false 
+
+[WC] link #2/16 completed
+[WC] cururl =  string http://172.17.0.3/openemr/portal/messaging/secure_chat.php false 
+
+[WC] link #3/16 completed
+[WC] cururl =  string http://172.17.0.3/openemr/portal/messaging/secure_chat.php false 
+
+[WC] link #4/16 completed
+[WC] cururl =  string http://172.17.0.3/openemr/portal/messaging/secure_chat.php false 
+
+[WC] link #5/16 completed
+[WC] cururl =  string http://172.17.0.3/openemr/portal/messaging/secure_chat.php false 
+
+[WC] link #6/16 completed
+[WC] cururl =  string http://172.17.0.3/openemr/portal/messaging/secure_chat.php false 
+
+[WC] link #7/16 completed
+[WC] cururl =  string http://172.17.0.3/openemr/portal/messaging/secure_chat.php false 
+
+[WC] link #8/16 completed
+[WC] cururl =  string http://172.17.0.3/openemr/portal/messaging/secure_chat.php false 
+
+[WC] link #9/16 completed
+[WC] cururl =  string http://172.17.0.3/openemr/portal/messaging/secure_chat.php false 
+
+[WC] link #10/16 completed
+[WC] cururl =  string http://172.17.0.3/openemr/portal/messaging/secure_chat.php false 
+
+[WC] link #11/16 completed
+[WC] cururl =  string http://172.17.0.3/openemr/portal/messaging/secure_chat.php false 
+
+[WC] link #12/16 completed
+[WC] cururl =  string http://172.17.0.3/openemr/portal/messaging/secure_chat.php false 
+
+[WC] link #13/16 completed
+[WC] cururl =  string http://172.17.0.3/openemr/portal/messaging/secure_chat.php false 
+
+[WC] link #14/16 completed
+[WC] cururl =  string http://172.17.0.3/openemr/portal/messaging/secure_chat.php false 
+
+[WC] link #15/16 completed
+[[38;5;2mWC[0m] [38;5;2m ADDED [0mOnPageAnchor -- GET http://172.17.0.3/openemr/portal/patient/provider urllen=49 postlen=0 --  
+[WC] searchForURLSelector starting.
+[WC] second form ACTION= http://172.17.0.3/openemr/portal/report/pat_ledger.php?form=1&patient_id=1 post  FROM url  http://172.17.0.3/openemr/portal/report/pat_ledger.php?form=1&patient_id=1
+[[38;5;2mWC[0m] [38;5;2m ADDED [0mPageForms -- POST http://172.17.0.3/openemr/portal/report/pat_ledger.php?form=1&patient_id=1 urllen=74 postlen=138 --  postData=form=1&patient_id=1&form_refresh=&form_csvexport=&form_from_date=202-08-26&form_to_date=2023-08-26&form_patient=1&form_pid=1&form_dob=&=&= [0m
+[WC] searchForURLSelector starting.
+[WC] check element hash = JSHandle:undefined object
+[WC] cururl =  string http://172.17.0.3/openemr/portal/report/pat_ledger.php?form=1&patient_id=1 false 
+
+[WC] link #0/1 completed
+[WC] searchForURLSelector starting.
+[WC] second form ACTION= http://172.17.0.3/openemr/ccr/createCCR.php?portal_auth_two=1 post  FROM url  http://172.17.0.3/openemr/portal/home.php
+[WC] Detected HASH CHANGE, replacing http://172.17.0.3/openemr/portal/home.php# with http://172.17.0.3/openemr/portal/home.php
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[[38;5;2mWC[0m] [38;5;2m ADDED [0mPageForms -- POST http://172.17.0.3/openemr/ccr/createCCR.php?portal_auth_two=1 urllen=61 postlen=98 --  postData=portal_auth_two=1&ccrAction=&raw=&show_date=on&Start=&End=&=Generate%20Report&=Generate%20Report&= [0m
+[[38;5;2mWC[0m] [38;5;2m ADDED [0mPageForms -- POST http://172.17.0.3/openemr/ccr/createCCR.php?portal_auth_two=1 urllen=61 postlen=89 --  postData=portal_auth_two=1&ccrAction=&raw=&show_date=on&Start=&End=&=Generate%20Report&=Download&= [0m
+[[38;5;2mWC[0m] [38;5;2m ADDED [0mPageForms -- POST http://172.17.0.3/openemr/ccr/createCCR.php?portal_auth_two=1 urllen=61 postlen=81 --  postData=portal_auth_two=1&ccrAction=&raw=&show_date=on&Start=&End=&=Generate%20Report&=&= [0m
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] second form ACTION= http://172.17.0.3/openemr/portal/report/portal_custom_report.php post  FROM url  http://172.17.0.3/openemr/portal/home.php#
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='mTypeError: Cannot read properties of null (reading 'dispatchEvent')[0m'
+[WC] Form Horde away!
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='Closed:[reload]'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Content-length"'
+[WC] puppeteer layer recieved url from browser with urlstr='to set unsafe header "Connection"'
+[WC] puppeteer layer recieved url from browser with urlstr='dden then removed!'
+I think we are STUCKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+Broswer should have closed by now
+[WC] addFormData(p) Error Error: Protocol error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.
+Error: Protocol error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.
+    at CDPSession.send (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/Connection.js:214:35)
+    at ExecutionContext._evaluateInternal (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:204:50)
+    at ExecutionContext.evaluateHandle (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:155:21)
+    at ElementHandle.evaluateHandle (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/JSHandle.js:120:46)
+    at ElementHandle.getProperty (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/JSHandle.js:125:41)
+    at RequestExplorer.getAttribute (file:///helpers/request_crawler/input_sifter2.js:754:38)
+    at RequestExplorer.searchTags (file:///helpers/request_crawler/input_sifter2.js:854:56)
+    at async RequestExplorer.searchForInputs (file:///helpers/request_crawler/input_sifter2.js:803:21)
+    at async RequestExplorer.addFormData (file:///helpers/request_crawler/input_sifter2.js:892:38)
+    at async RequestExplorer.addDataFromBrowser (file:///helpers/request_crawler/input_sifter2.js:919:26)
+[WC] addFormData(p) Error Error: Protocol error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.
+Error: Protocol error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.
+    at CDPSession.send (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/Connection.js:214:35)
+    at ExecutionContext._evaluateInternal (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:204:50)
+    at ExecutionContext.evaluateHandle (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:155:21)
+    at ElementHandle.evaluateHandle (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/JSHandle.js:120:46)
+    at ElementHandle.getProperty (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/JSHandle.js:125:41)
+    at RequestExplorer.getAttribute (file:///helpers/request_crawler/input_sifter2.js:754:38)
+    at RequestExplorer.searchTags (file:///helpers/request_crawler/input_sifter2.js:853:57)
+    at async RequestExplorer.searchForInputs (file:///helpers/request_crawler/input_sifter2.js:800:24)
+    at async RequestExplorer.addFormData (file:///helpers/request_crawler/input_sifter2.js:892:38)
+    at async RequestExplorer.addDataFromBrowser (file:///helpers/request_crawler/input_sifter2.js:915:34)
+[WC] searchForURLSelector starting.
+[WC] searchForURLSelector starting.
+[WC] error encountered while trying to search for tag object http://172.17.0.3/openemr/portal/messaging/secure_chat.php a href 
+	 Error: Protocol error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.
+    at CDPSession.send (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/Connection.js:214:35)
+    at ExecutionContext._evaluateInternal (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:204:50)
+    at ExecutionContext.evaluateHandle (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:155:21)
+    at ElementHandle.evaluateHandle (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/JSHandle.js:120:46)
+    at Object.internalHandler.queryAll (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/QueryHandler.js:35:44)
+    at ElementHandle.$$ (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/JSHandle.js:707:29)
+    at DOMWorld.$$ (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:127:38)
+    at async RequestExplorer.searchForURLSelector (file:///helpers/request_crawler/input_sifter2.js:716:27)
+    at async RequestExplorer.addURLsFromPage (file:///helpers/request_crawler/input_sifter2.js:865:33)
+    at async RequestExplorer.addDataFromBrowser (file:///helpers/request_crawler/input_sifter2.js:916:34)
+[WC] error encountered while trying to search for tag object http://172.17.0.3/openemr/portal/home.php# a href 
+	 Error: Protocol error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.
+    at CDPSession.send (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/Connection.js:214:35)
+    at ExecutionContext._evaluateInternal (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:204:50)
+    at ExecutionContext.evaluateHandle (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:155:21)
+    at ElementHandle.evaluateHandle (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/JSHandle.js:120:46)
+    at Object.internalHandler.queryAll (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/QueryHandler.js:35:44)
+    at ElementHandle.$$ (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/JSHandle.js:707:29)
+    at DOMWorld.$$ (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:127:38)
+    at async RequestExplorer.searchForURLSelector (file:///helpers/request_crawler/input_sifter2.js:716:27)
+    at async RequestExplorer.addURLsFromPage (file:///helpers/request_crawler/input_sifter2.js:865:33)
+    at async RequestExplorer.addDataFromBrowser (file:///helpers/request_crawler/input_sifter2.js:920:26)
+[WC] searchForURLSelector starting.
+[WC] searchForURLSelector starting.
+[WC] error encountered while trying to search for tag object http://172.17.0.3/openemr/portal/messaging/secure_chat.php iframe src 
+	 Error: Protocol error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.
+    at CDPSession.send (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/Connection.js:214:35)
+    at ExecutionContext._evaluateInternal (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:204:50)
+    at ExecutionContext.evaluateHandle (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:155:21)
+    at ElementHandle.evaluateHandle (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/JSHandle.js:120:46)
+    at Object.internalHandler.queryAll (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/QueryHandler.js:35:44)
+    at ElementHandle.$$ (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/JSHandle.js:707:29)
+    at DOMWorld.$$ (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:127:38)
+    at async RequestExplorer.searchForURLSelector (file:///helpers/request_crawler/input_sifter2.js:716:27)
+    at async RequestExplorer.addURLsFromPage (file:///helpers/request_crawler/input_sifter2.js:870:33)
+    at async RequestExplorer.addDataFromBrowser (file:///helpers/request_crawler/input_sifter2.js:916:34)
+[WC] error encountered while trying to search for tag object http://172.17.0.3/openemr/portal/home.php# iframe src 
+	 Error: Protocol error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.
+    at CDPSession.send (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/Connection.js:214:35)
+    at ExecutionContext._evaluateInternal (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:204:50)
+    at ExecutionContext.evaluateHandle (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:155:21)
+    at ElementHandle.evaluateHandle (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/JSHandle.js:120:46)
+    at Object.internalHandler.queryAll (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/QueryHandler.js:35:44)
+    at ElementHandle.$$ (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/JSHandle.js:707:29)
+    at DOMWorld.$$ (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:127:38)
+    at async RequestExplorer.searchForURLSelector (file:///helpers/request_crawler/input_sifter2.js:716:27)
+    at async RequestExplorer.addURLsFromPage (file:///helpers/request_crawler/input_sifter2.js:870:33)
+    at async RequestExplorer.addDataFromBrowser (file:///helpers/request_crawler/input_sifter2.js:920:26)
+received error in page. Error: Protocol error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed. 
+[WC] searchForURLSelector starting.
+[WC] error encountered while trying to search for tag object http://172.17.0.3/openemr/portal/report/pat_ledger.php?form=1&patient_id=1 a href 
+	 Error: Protocol error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.
+    at CDPSession.send (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/Connection.js:214:35)
+    at ExecutionContext._evaluateInternal (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:204:50)
+    at ExecutionContext.evaluateHandle (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:155:21)
+    at ElementHandle.evaluateHandle (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/JSHandle.js:120:46)
+    at Object.internalHandler.queryAll (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/QueryHandler.js:35:44)
+    at ElementHandle.$$ (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/JSHandle.js:707:29)
+    at DOMWorld.$$ (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:127:38)
+    at async RequestExplorer.searchForURLSelector (file:///helpers/request_crawler/input_sifter2.js:716:27)
+    at async RequestExplorer.addURLsFromPage (file:///helpers/request_crawler/input_sifter2.js:865:33)
+    at async RequestExplorer.addDataFromBrowser (file:///helpers/request_crawler/input_sifter2.js:916:34)
+[WC] searchForURLSelector starting.
+[WC] error encountered while trying to search for tag object http://172.17.0.3/openemr/portal/report/pat_ledger.php?form=1&patient_id=1 iframe src 
+	 Error: Protocol error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.
+    at CDPSession.send (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/Connection.js:214:35)
+    at ExecutionContext._evaluateInternal (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:204:50)
+    at ExecutionContext.evaluateHandle (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:155:21)
+    at ElementHandle.evaluateHandle (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/JSHandle.js:120:46)
+    at Object.internalHandler.queryAll (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/QueryHandler.js:35:44)
+    at ElementHandle.$$ (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/JSHandle.js:707:29)
+    at DOMWorld.$$ (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:127:38)
+    at async RequestExplorer.searchForURLSelector (file:///helpers/request_crawler/input_sifter2.js:716:27)
+    at async RequestExplorer.addURLsFromPage (file:///helpers/request_crawler/input_sifter2.js:870:33)
+    at async RequestExplorer.addDataFromBrowser (file:///helpers/request_crawler/input_sifter2.js:916:34)
+received error in page. Error: Protocol error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed. 
+[WC] searchForURLSelector starting.
+[WC] error encountered while trying to search for tag object http://172.17.0.3/openemr/portal/home.php# a href 
+	 Error: Protocol error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.
+    at CDPSession.send (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/Connection.js:214:35)
+    at ExecutionContext._evaluateInternal (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:204:50)
+    at ExecutionContext.evaluateHandle (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:155:21)
+    at ElementHandle.evaluateHandle (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/JSHandle.js:120:46)
+    at Object.internalHandler.queryAll (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/QueryHandler.js:35:44)
+    at ElementHandle.$$ (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/JSHandle.js:707:29)
+    at DOMWorld.$$ (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:127:38)
+    at async RequestExplorer.searchForURLSelector (file:///helpers/request_crawler/input_sifter2.js:716:27)
+    at async RequestExplorer.addURLsFromPage (file:///helpers/request_crawler/input_sifter2.js:865:33)
+    at async RequestExplorer.addDataFromBrowser (file:///helpers/request_crawler/input_sifter2.js:920:26)
+[WC] searchForURLSelector starting.
+[WC] error encountered while trying to search for tag object http://172.17.0.3/openemr/portal/home.php# iframe src 
+	 Error: Protocol error (Runtime.callFunctionOn): Session closed. Most likely the page has been closed.
+    at CDPSession.send (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/Connection.js:214:35)
+    at ExecutionContext._evaluateInternal (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:204:50)
+    at ExecutionContext.evaluateHandle (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/ExecutionContext.js:155:21)
+    at ElementHandle.evaluateHandle (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/JSHandle.js:120:46)
+    at Object.internalHandler.queryAll (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/QueryHandler.js:35:44)
+    at ElementHandle.$$ (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/JSHandle.js:707:29)
+    at DOMWorld.$$ (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/DOMWorld.js:127:38)
+    at async RequestExplorer.searchForURLSelector (file:///helpers/request_crawler/input_sifter2.js:716:27)
+    at async RequestExplorer.addURLsFromPage (file:///helpers/request_crawler/input_sifter2.js:870:33)
+    at async RequestExplorer.addDataFromBrowser (file:///helpers/request_crawler/input_sifter2.js:920:26)
+[WC] W#0 home.php Count 0 Round 1 loopcnt 1, added 0 reqs : Inputs: 12, (2/4) reqs left to process 
+Breaking out from test loop b/c BROWSER IS DEAD....
+[WC] Round Results for round 1 of 3: Total Inputs :  40 Total Requests: 2 of 12 processed so far
+[WC] [38;5;10mRemoving page timer for browser [0m
+[38;5;12m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Completed http://172.17.0.3/openemr/portal/home.php ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ [0m
+
+[
+  'GET http://localhost/openemr/portal ',
+  'GET http://172.17.0.3/openemr/portal/home.php ',
+  'GET http://localhost/openemr/portal/ ',
+  'GET http://172.17.0.3/openemr/portal/messaging/secure_chat.php =&=&=',
+  'GET http://172.17.0.3/openemr/portal/messaging/secure_chat.php =&files=&=&='
+]
+[[38;5;5mWC[0m] Browser launching with  url=http://localhost/openemr/portal/ 
+[WC] Performing login http://172.17.0.3/openemr/portal
+[Login] REQUESTING URL  http://172.17.0.3/openemr/portal
+[Login] URL GOTO'ed 
+[[38;5;5mWC[0m] Cookie: PHPSESSID=21kp4hpjl0tb4cdho055usa2n6
+[[38;5;5mWC[0m] Cookie: OpenEMR=hu0udotoemeihpt1ds1b94cn0g
+[WC] adding processRequest for http://172.17.0.3/openemr/portal/messaging/secure_chat.php
+[WC] adding processRequest for http://172.17.0.3/openemr/portal/report/pat_ledger.php?form=1&patient_id=1
+GOING TO requested page = http://localhost/openemr/portal/
+[38;5;5mprocessRequest caught to add method and data and continueing [0m http://localhost/openemr/portal/
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/public/assets/bootstrap-3-3-4/dist/css/bootstrap.min.css?v=41 method= GET restype= stylesheet data= undefined
+[WC] Intercepted in processRequest  http://localhost/openemr/portal/?v=41 GET
+[[38;5;2mWC[0m] [38;5;2m ADDED [0m-- InterceptedRequest -- GET http://localhost/openemr/portal/?v=41 urllen=37 postlen=0 --  [0m
+Caught exception: TypeError: fRequest.getRequestKey is not a function
+TypeError: fRequest.getRequestKey is not a function
+    at AppData.addRequest (file:///helpers/request_crawler/input_sifter2.js:423:31)
+    at processRequest (file:///helpers/request_crawler/input_sifter2.js:2509:47)
+    at /helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:219:52
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async HTTPRequest.finalizeInterceptions (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/HTTPRequest.js:133:9)
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/public/assets/font-awesome-4-6-3/css/font-awesome.min.css?v=41 method= GET restype= stylesheet data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/public/assets/jquery-datetimepicker-2-5-4/build/jquery.datetimepicker.min.css?v=41 method= GET restype= stylesheet data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/public/assets/jquery-min-3-1-1/index.js?v=41 method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/public/assets/bootstrap-3-3-4/dist/js/bootstrap.min.js?v=41 method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/public/assets/jquery-datetimepicker-2-5-4/build/jquery.datetimepicker.full.min.js?v=41 method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/library/textformat.js?v=41 method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/library/dialog.js?v=41 method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/public/assets/jquery.gritter-1-7-4/js/jquery.gritter.min.js method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/public/assets/jquery.gritter-1-7-4/css/jquery.gritter.css method= GET restype= stylesheet data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/public/assets/emodal-1-2-65/dist/eModal.js method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/portal/assets/css/base.css?v=41 method= GET restype= stylesheet data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/portal/assets/css/register.css?v=41 method= GET restype= stylesheet data= undefined
+[WC] Intercepted in processRequest  http://localhost/openemr/public/images/login-logo.png GET
+Caught exception: TypeError: fRequest.getRequestKey is not a function
+TypeError: fRequest.getRequestKey is not a function
+    at AppData.addRequest (file:///helpers/request_crawler/input_sifter2.js:423:31)
+    at processRequest (file:///helpers/request_crawler/input_sifter2.js:2509:47)
+    at /helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:219:52
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async HTTPRequest.finalizeInterceptions (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/HTTPRequest.js:133:9)
+Error: Browser cannot connect to 'http://localhost/openemr/portal/' RETRYING
+TimeoutError: Navigation timeout of 20000 ms exceeded
+    at /helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:107:111
+GOING TO requested page = http://localhost/openemr/portal/
+[38;5;5mprocessRequest caught to add method and data and continueing [0m http://localhost/openemr/portal/
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/public/assets/bootstrap-3-3-4/dist/css/bootstrap.min.css?v=41 method= GET restype= stylesheet data= undefined
+[WC] Intercepted in processRequest  http://localhost/openemr/portal/?v=41 GET
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/public/assets/font-awesome-4-6-3/css/font-awesome.min.css?v=41 method= GET restype= stylesheet data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/public/assets/jquery-datetimepicker-2-5-4/build/jquery.datetimepicker.min.css?v=41 method= GET restype= stylesheet data= undefined
+Caught exception: TypeError: fRequest.getRequestKey is not a function
+TypeError: fRequest.getRequestKey is not a function
+    at AppData.addRequest (file:///helpers/request_crawler/input_sifter2.js:423:31)
+    at processRequest (file:///helpers/request_crawler/input_sifter2.js:2509:47)
+    at /helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:219:52
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async HTTPRequest.finalizeInterceptions (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/HTTPRequest.js:133:9)
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/public/assets/jquery-min-3-1-1/index.js?v=41 method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/public/assets/bootstrap-3-3-4/dist/js/bootstrap.min.js?v=41 method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/public/assets/jquery-datetimepicker-2-5-4/build/jquery.datetimepicker.full.min.js?v=41 method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/library/textformat.js?v=41 method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/library/dialog.js?v=41 method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/public/assets/jquery.gritter-1-7-4/js/jquery.gritter.min.js method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/public/assets/jquery.gritter-1-7-4/css/jquery.gritter.css method= GET restype= stylesheet data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/public/assets/emodal-1-2-65/dist/eModal.js method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/portal/assets/css/base.css?v=41 method= GET restype= stylesheet data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/portal/assets/css/register.css?v=41 method= GET restype= stylesheet data= undefined
+[WC] Intercepted in processRequest  http://localhost/openemr/public/images/login-logo.png GET
+Caught exception: TypeError: fRequest.getRequestKey is not a function
+TypeError: fRequest.getRequestKey is not a function
+    at AppData.addRequest (file:///helpers/request_crawler/input_sifter2.js:423:31)
+    at processRequest (file:///helpers/request_crawler/input_sifter2.js:2509:47)
+    at /helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:219:52
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async HTTPRequest.finalizeInterceptions (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/HTTPRequest.js:133:9)
+Error: Browser cannot connect to 'http://localhost/openemr/portal/' RETRYING
+TimeoutError: Navigation timeout of 20000 ms exceeded
+    at /helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:107:111
+GOING TO requested page = http://localhost/openemr/portal/
+[38;5;5mprocessRequest caught to add method and data and continueing [0m http://localhost/openemr/portal/
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/public/assets/bootstrap-3-3-4/dist/css/bootstrap.min.css?v=41 method= GET restype= stylesheet data= undefined
+[WC] Intercepted in processRequest  http://localhost/openemr/portal/?v=41 GET
+Caught exception: TypeError: fRequest.getRequestKey is not a function
+TypeError: fRequest.getRequestKey is not a function
+    at AppData.addRequest (file:///helpers/request_crawler/input_sifter2.js:423:31)
+    at processRequest (file:///helpers/request_crawler/input_sifter2.js:2509:47)
+    at /helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:219:52
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async HTTPRequest.finalizeInterceptions (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/HTTPRequest.js:133:9)
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/public/assets/font-awesome-4-6-3/css/font-awesome.min.css?v=41 method= GET restype= stylesheet data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/public/assets/jquery-datetimepicker-2-5-4/build/jquery.datetimepicker.min.css?v=41 method= GET restype= stylesheet data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/public/assets/jquery-min-3-1-1/index.js?v=41 method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/public/assets/bootstrap-3-3-4/dist/js/bootstrap.min.js?v=41 method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/public/assets/jquery-datetimepicker-2-5-4/build/jquery.datetimepicker.full.min.js?v=41 method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/library/textformat.js?v=41 method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/library/dialog.js?v=41 method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/public/assets/jquery.gritter-1-7-4/js/jquery.gritter.min.js method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/public/assets/jquery.gritter-1-7-4/css/jquery.gritter.css method= GET restype= stylesheet data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/public/assets/emodal-1-2-65/dist/eModal.js method= GET restype= script data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/portal/assets/css/base.css?v=41 method= GET restype= stylesheet data= undefined
+CSS/JS Request Coming THROUGH!!!!!  http://localhost/openemr/portal/assets/css/register.css?v=41 method= GET restype= stylesheet data= undefined
+[WC] Intercepted in processRequest  http://localhost/openemr/public/images/login-logo.png GET
+Caught exception: TypeError: fRequest.getRequestKey is not a function
+TypeError: fRequest.getRequestKey is not a function
+    at AppData.addRequest (file:///helpers/request_crawler/input_sifter2.js:423:31)
+    at processRequest (file:///helpers/request_crawler/input_sifter2.js:2509:47)
+    at /helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:219:52
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async HTTPRequest.finalizeInterceptions (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/HTTPRequest.js:133:9)
+I think we are STUCKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKKK
+Broswer should have closed by now
+Error: Browser cannot connect to 'http://localhost/openemr/portal/' RETRYING
+Error: Navigation failed because browser has disconnected!
+    at /helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/LifecycleWatcher.js:51:147
+    at /helpers/request_crawler/node_modules/puppeteer/lib/cjs/vendor/mitt/src/index.js:51:62
+    at Array.map (<anonymous>)
+    at Object.emit (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/vendor/mitt/src/index.js:51:43)
+    at CDPSession.emit (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/EventEmitter.js:72:22)
+    at CDPSession._onClosed (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/Connection.js:267:14)
+    at Connection._onClose (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/Connection.js:144:21)
+    at WebSocket.<anonymous> (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/node/NodeWebSocketTransport.js:17:30)
+    at WebSocket.onClose (/helpers/request_crawler/node_modules/ws/lib/event-target.js:210:18)
+    at WebSocket.emit (node:events:390:28)
+Error: LAST ATTEMPT, giving up, browser cannot connect to 'http://localhost/openemr/portal/'
+[WC] Round Results for round 1 of 3: Total Inputs :  41 Total Requests: 3 of 13 processed so far
+[WC] [38;5;10mRemoving page timer for browser [0m
+[38;5;12m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Completed http://localhost/openemr/portal/ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ [0m
+
+[
+  'GET http://localhost/openemr/portal ',
+  'GET http://172.17.0.3/openemr/portal/home.php ',
+  'GET http://localhost/openemr/portal/ ',
+  'GET http://172.17.0.3/openemr/portal/messaging/secure_chat.php =&=&=',
+  'GET http://172.17.0.3/openemr/portal/messaging/secure_chat.php =&files=&=&='
+]
+[[38;5;5mWC[0m] Browser launching with  url=http://172.17.0.3/openemr/portal/messaging/secure_chat.php 
+[WC] Performing login http://172.17.0.3/openemr/portal
+[Login] REQUESTING URL  http://172.17.0.3/openemr/portal
+[Login] URL GOTO'ed 
+docker exec -it -w /helpers/request_crawler/ -u wc openemr-user bash -i -c "timeout --signal KILL 14398s node main.js request_crawler http://localhost/openemr/portal /p/Witcher-experiment/interpreter-targets/openemr/user "
+[
+  '/home/wc/.nvm/versions/node/v17.2.0/bin/node',
+  '/helpers/request_crawler/main.js',
+  'request_crawler',
+  'http://localhost/openemr/portal',
+  '/p/Witcher-experiment/interpreter-targets/openemr/user'
+]
+ ************************* LOADING INCOMING ******************************
+ -- GET http://localhost/openemr/portal urllen=31 postlen=0 -- 
+ -- GET http://172.17.0.3/openemr/portal/home.php urllen=41 postlen=0 -- 
+InterceptedRequest -- GET http://localhost/openemr/portal/ urllen=32 postlen=0 -- 
+PageForms -- GET http://172.17.0.3/openemr/portal/messaging/secure_chat.php urllen=58 postlen=5 -- 
+PageForms -- GET http://172.17.0.3/openemr/portal/messaging/secure_chat.php urllen=58 postlen=12 -- 
+PageForms -- GET http://172.17.0.3/openemr/portal/messaging/secure_chat.php urllen=58 postlen=25 -- 
+PageForms -- GET http://172.17.0.3/openemr/portal/messaging/secure_chat.php urllen=58 postlen=14 -- 
+OnPageAnchor -- GET http://172.17.0.3/openemr/portal/patient/provider urllen=49 postlen=0 -- 
+PageForms -- POST http://172.17.0.3/openemr/portal/report/pat_ledger.php?form=1&patient_id=1 urllen=74 postlen=138 -- 
+PageForms -- POST http://172.17.0.3/openemr/ccr/createCCR.php?portal_auth_two=1 urllen=61 postlen=98 -- 
+PageForms -- POST http://172.17.0.3/openemr/ccr/createCCR.php?portal_auth_two=1 urllen=61 postlen=89 -- 
+PageForms -- POST http://172.17.0.3/openemr/ccr/createCCR.php?portal_auth_two=1 urllen=61 postlen=81 -- 
+InterceptedRequest -- GET http://localhost/openemr/portal/?v=41 urllen=37 postlen=0 -- 
+Started worker  0
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 0 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 0 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 0 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+[38;5;28mhttp://localhost/openemr/portal, [38;5;11m1[0m
+[38;5;28mhttp://172.17.0.3/openemr/portal/home.php, [38;5;11m1[0m
+[38;5;28mhttp://localhost/openemr/portal/, [38;5;11m1[0m
+[38;5;28mhttp://172.17.0.3/openemr/portal/messaging/secure_chat.php, [38;5;11m1[0m
+[38;5;28mhttp://172.17.0.3/openemr/portal/messaging/secure_chat.php, [38;5;11m0[0m
+[38;5;28mhttp://172.17.0.3/openemr/portal/messaging/secure_chat.php, [38;5;11m0[0m
+[38;5;28mhttp://172.17.0.3/openemr/portal/messaging/secure_chat.php, [38;5;11m0[0m
+[38;5;28mhttp://172.17.0.3/openemr/portal/patient/provider, [38;5;11m0[0m
+[38;5;28mhttp://172.17.0.3/openemr/portal/report/pat_ledger.php?form=1&patient_id=1, [38;5;11m0[0m
+[38;5;28mhttp://172.17.0.3/openemr/ccr/createCCR.php?portal_auth_two=1, [38;5;11m0[0m
+[38;5;28mhttp://172.17.0.3/openemr/ccr/createCCR.php?portal_auth_two=1, [38;5;11m0[0m
+[38;5;28mhttp://172.17.0.3/openemr/ccr/createCCR.php?portal_auth_two=1, [38;5;11m0[0m
+[38;5;28mhttp://localhost/openemr/portal/?v=41, [38;5;11m0[0m
+
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 0 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 0 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 0 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+[
+  'GET http://localhost/openemr/portal ',
+  'GET http://172.17.0.2/openemr/portal/home.php ',
+  'GET http://localhost/openemr/portal/ ',
+  'GET http://172.17.0.3/openemr/portal/messaging/secure_chat.php =&=&=',
+  'GET http://172.17.0.3/openemr/portal/messaging/secure_chat.php =&files=&=&='
+]
+CURRENT ROUND VALUE HAS INCREASED TO  1
+[
+  'GET http://localhost/openemr/portal ',
+  'GET http://172.17.0.2/openemr/portal/home.php ',
+  'GET http://localhost/openemr/portal/ ',
+  'GET http://172.17.0.3/openemr/portal/messaging/secure_chat.php =&=&=',
+  'GET http://172.17.0.3/openemr/portal/messaging/secure_chat.php =&files=&=&='
+]
+[[38;5;5mWC[0m] Browser launching with  url=http://172.17.0.3/openemr/portal/messaging/secure_chat.php 
+[WC] Performing login http://172.17.0.2/openemr/portal
+[Login] REQUESTING URL  http://172.17.0.2/openemr/portal
+[Login] URL GOTO'ed 
+[[38;5;5mWC[0m] Cookie: PHPSESSID=jg2rm8p6kkb0khhbc8gon16her
+[[38;5;5mWC[0m] Cookie: OpenEMR=lm78kh13fmhcr2kmainnafn1jm
+[WC] adding processRequest for http://172.17.0.2/openemr/portal/messaging/secure_chat.php
+[WC] adding processRequest for http://172.17.0.2/openemr/portal/report/pat_ledger.php?form=1&patient_id=1
+GOING TO requested page = http://172.17.0.3/openemr/portal/messaging/secure_chat.php
+[38;5;5mprocessRequest caught to add method and data and continueing [0m http://172.17.0.3/openemr/portal/messaging/secure_chat.php
+Error: Browser cannot connect to 'http://172.17.0.3/openemr/portal/messaging/secure_chat.php' RETRYING
+Error: net::ERR_ADDRESS_UNREACHABLE at http://172.17.0.3/openemr/portal/messaging/secure_chat.php
+    at navigate (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:155:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async FrameManager.navigateFrame (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:130:21)
+    at async Frame.goto (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:500:16)
+    at async Page.goto (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1167:16)
+    at async RequestExplorer.exerciseTarget (file:///helpers/request_crawler/input_sifter2.js:1802:32)
+    at async RequestExplorer.start (file:///helpers/request_crawler/input_sifter2.js:2697:17)
+    at async explorationWorker (file:///helpers/request_crawler/main.js:143:9)
+GOING TO requested page = http://172.17.0.3/openemr/portal/messaging/secure_chat.php
+[38;5;5mprocessRequest caught to add method and data and continueing [0m http://172.17.0.3/openemr/portal/messaging/secure_chat.php
+Error: Browser cannot connect to 'http://172.17.0.3/openemr/portal/messaging/secure_chat.php' RETRYING
+Error: net::ERR_ADDRESS_UNREACHABLE at http://172.17.0.3/openemr/portal/messaging/secure_chat.php
+    at navigate (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:155:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async FrameManager.navigateFrame (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:130:21)
+    at async Frame.goto (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:500:16)
+    at async Page.goto (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1167:16)
+    at async RequestExplorer.exerciseTarget (file:///helpers/request_crawler/input_sifter2.js:1802:32)
+    at async RequestExplorer.start (file:///helpers/request_crawler/input_sifter2.js:2697:17)
+    at async explorationWorker (file:///helpers/request_crawler/main.js:143:9)
+GOING TO requested page = http://172.17.0.3/openemr/portal/messaging/secure_chat.php
+[38;5;5mprocessRequest caught to add method and data and continueing [0m http://172.17.0.3/openemr/portal/messaging/secure_chat.php
+Error: Browser cannot connect to 'http://172.17.0.3/openemr/portal/messaging/secure_chat.php' RETRYING
+Error: net::ERR_ADDRESS_UNREACHABLE at http://172.17.0.3/openemr/portal/messaging/secure_chat.php
+    at navigate (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:155:23)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async FrameManager.navigateFrame (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:130:21)
+    at async Frame.goto (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/FrameManager.js:500:16)
+    at async Page.goto (/helpers/request_crawler/node_modules/puppeteer/lib/cjs/puppeteer/common/Page.js:1167:16)
+    at async RequestExplorer.exerciseTarget (file:///helpers/request_crawler/input_sifter2.js:1802:32)
+    at async RequestExplorer.start (file:///helpers/request_crawler/input_sifter2.js:2697:17)
+    at async explorationWorker (file:///helpers/request_crawler/main.js:143:9)
+Error: LAST ATTEMPT, giving up, browser cannot connect to 'http://172.17.0.3/openemr/portal/messaging/secure_chat.php'
+[WC] Round Results for round 1 of 3: Total Inputs :  41 Total Requests: 5 of 13 processed so far
+[WC] [38;5;10mRemoving page timer for browser [0m
+[38;5;12m^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ Completed http://172.17.0.3/openemr/portal/messaging/secure_chat.php ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ [0m
+
+[
+  'GET http://localhost/openemr/portal ',
+  'GET http://172.17.0.2/openemr/portal/home.php ',
+  'GET http://localhost/openemr/portal/ ',
+  'GET http://172.17.0.3/openemr/portal/messaging/secure_chat.php =&=&=',
+  'GET http://172.17.0.3/openemr/portal/messaging/secure_chat.php =&files=&=&='
+]
+SKIPPING PageForms -- GET http://172.17.0.3/openemr/portal/messaging/secure_chat.php urllen=58 postlen=25 --  for now 
+SKIPPING PageForms -- GET http://172.17.0.3/openemr/portal/messaging/secure_chat.php urllen=58 postlen=14 --  for now 
+[[38;5;5mWC[0m] Browser launching with  url=http://172.17.0.3/openemr/portal/patient/provider 
+[WC] Performing login http://172.17.0.2/openemr/portal
+[Login] REQUESTING URL  http://172.17.0.2/openemr/portal
+[Login] URL GOTO'ed 
+<!DOCTYPE html><html><head>
+    <title>Patient Portal Login</title>
+    
+<link rel="stylesheet" href="/openemr/public/assets/bootstrap-3-3-4/dist/css/bootstrap.min.css?v=41" type="text/css">
+<link rel="stylesheet" href="?v=41" type="text/css">
+<link rel="stylesheet" href="/openemr/public/assets/font-awesome-4-6-3/css/font-awesome.min.css?v=41" type="text/css">
+<link rel="stylesheet" href="/openemr/public/assets/jquery-datetimepicker-2-5-4/build/jquery.datetimepicker.min.css?v=41" type="text/css">
+
+<script type="text/javascript" src="/openemr/public/assets/jquery-min-3-1-1/index.js?v=41"></script>
+<script type="text/javascript" src="/openemr/public/assets/bootstrap-3-3-4/dist/js/bootstrap.min.js?v=41"></script>
+<script type="text/javascript" src="/openemr/public/assets/jquery-datetimepicker-2-5-4/build/jquery.datetimepicker.full.min.js?v=41"></script>
+<script type="text/javascript" src="/openemr/library/textformat.js?v=41"></script>
+<script type="text/javascript" src="/openemr/library/dialog.js?v=41"></script>
+
+    <script type="text/javascript" src="/openemr/public/assets/jquery.gritter-1-7-4/js/jquery.gritter.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/openemr/public/assets/jquery.gritter-1-7-4/css/jquery.gritter.css">
+    <script type="text/javascript" src="/openemr/public/assets/emodal-1-2-65/dist/eModal.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/base.css?v=41">
+    <link rel="stylesheet" type="text/css" href="assets/css/register.css?v=41">
+<script type="text/javascript">
+    function process() {
+        if (!(validate())) {
+            alert ('Field(s) are missing!');
+            return false;
+        }
+    }
+    function validate() {
+            var pass=true;
+        if (document.getElementById('uname').value == "") {
+        document.getElementById('uname').style.border = "1px solid red";
+                pass=false;
+        }
+        if (document.getElementById('pass').value == "") {
+        document.getElementById('pass').style.border = "1px solid red";
+                pass=false;
+        }
+            return pass;
+    }
+    function process_new_pass() {
+        if (!(validate_new_pass())) {
+            alert ('Field(s) are missing!');
+            return false;
+        }
+        if (document.getElementById('pass_new').value != document.getElementById('pass_new_confirm').value) {
+            alert ('The new password fields are not the same.');
+            return false;
+        }
+        if (document.getElementById('pass').value == document.getElementById('pass_new').value) {
+            alert ('The new password can not be the same as the current password.');
+            return false;
+        }
+    }
+
+    function validate_new_pass() {
+        var pass=true;
+        if (document.getElementById('uname').value == "") {
+            document.getElementById('uname').style.border = "1px solid red";
+            pass=false;
+        }
+        if (document.getElementById('pass').value == "") {
+            document.getElementById('pass').style.border = "1px solid red";
+            pass=false;
+        }
+        if (document.getElementById('pass_new').value == "") {
+            document.getElementById('pass_new').style.border = "1px solid red";
+            pass=false;
+        }
+        if (document.getElementById('pass_new_confirm').value == "") {
+            document.getElementById('pass_new_confirm').style.border = "1px solid red";
+            pass=false;
+        }
+        return pass;
+    }
+</script>
+</head>
+<body class="skin-blue">
+<br><br>
+<div class="container text-center">
+      <!-- Main logon -->
+    <div id="wrapper" class="row centerwrapper text-center">
+    <img style="width:65%" src="/openemr/public/images/login-logo.png">
+    <form class="form-inline text-center" action="get_patient_info.php" method="POST" onsubmit="return process()">
+        <div class="row">
+                <div class="col-sm-12 text-center">
+                    <fieldset>
+                        <legend class="bg-primary"><h3>Patient Portal Login</h3></legend>
+                        <div class="well">
+                        <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group inline">
+                                        <label class="control-label" for="uname">Username</label>
+                                        <div class="controls inline-inputs">
+                                            <input type="text" class="form-control" name="uname" id="uname" autocomplete="on" required="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group inline">
+                                        <label class="control-label" for="pass">Password</label>
+                                        <div class="controls inline-inputs">
+                                            <input class="form-control" name="pass" id="pass" type="password" required="" autocomplete="on">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 form-group">
+                                    <label class="control-label" for="passaddon">E-Mail Address</label>
+                                    <div class="controls inline-inputs">
+                                        <input class="form-control" style="width: 100%" name="passaddon" id="passaddon" placeholder="on file email" type="email" autocomplete="on" value="e@mail.com">
+                                    </div>
+                                </div>
+                            </div>
+                                                                        <div class="form-group row">
+                            <label for="selLanguage">Language</label>
+                            <select class="form-control" id="selLanguage" name="languageChoice">
+                            <option selected="selected" value="1">Default - English (Standard)</option>
+<option value="27">Albanian</option>
+<option value="19">Arabic</option>
+<option value="13">Armenian</option>
+<option value="14">Bahasa Indonesia</option>
+<option value="10">Chinese (Simplified)</option>
+<option value="11">Chinese (Traditional)</option>
+<option value="28">Czech</option>
+<option value="20">Danish</option>
+<option value="6">Dutch</option>
+<option value="16">English (Indian)</option>
+<option value="1">English (Standard)</option>
+<option value="32">Finnish</option>
+<option value="9">French (Canadian)</option>
+<option value="8">French (Standard)</option>
+<option value="5">German</option>
+<option value="15">Greek</option>
+<option value="7">Hebrew</option>
+<option value="24">Hindi</option>
+<option value="23">Italian</option>
+<option value="31">Japanese</option>
+<option value="33">Marathi</option>
+<option value="30">Persian</option>
+<option value="22">Polish</option>
+<option value="18">Portuguese (Brazilian)</option>
+<option value="17">Portuguese (European)</option>
+<option value="25">Romanian</option>
+<option value="12">Russian</option>
+<option value="4">Spanish (Latin American)</option>
+<option value="3">Spanish (Spain)</option>
+<option value="2">Swedish</option>
+<option value="34">Tamil</option>
+<option value="21">Turkish</option>
+<option value="29">Ukrainian</option>
+<option value="26">Vietnamese</option>
+                          </select>
+                        </div>
+                                                </div>
+                        <div class="col-sm-12 col-md-12">
+                                                            <button class="btn btn-default pull-left" onclick="location.replace('./account/register.php')">Register</button>
+                                                                                        <button class="btn btn-success pull-right" type="submit">Log In</button>
+                        </div>
+                    </fieldset>
+                </div>
+          </div>
+                </form>
+    </div><!-- div wrapper -->
+     <!--  logon wrapper -->
+</div><!-- container -->
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+    var unique_id = $.gritter.add({
+        title: '<span class="red">Oops!</span>',
+        text: 'Something went wrong. Please try again.',
+        sticky: false,
+        time: '5000',
+        class_name: 'my-nonsticky-class'
+    });
+
+return false;
+});
+/* Test Data
+$("#emailInput").val("me@me.com");
+$("#fname").val("Jerry");
+$("#lname").val("Padgett");
+$("#dob").val("1919-03-03"); */
+
+function callServer(action, value, value2, last, first) {
+    var data = {
+        'action' : action,
+        'value' : value,
+        'dob' : $("#dob").val(),
+        'last' : $("#lname").val(),
+        'first' : $("#fname").val(),
+        'email' : $("#emailInput").val()
+    }
+    if (action == 'do_signup') {
+        data = {
+            'action': action,
+            'pid': value
+        };
+    }
+    else if (action == 'notify_admin') {
+        data = {
+            'action': action,
+            'pid': value,
+            'provider': value2
+        };
+    }
+    else if (action == 'cleanup') {
+        data = {
+            'action': action
+        }
+    };
+    $.ajax({
+        type : 'GET',
+        url : './account/account.php',
+        data : data
+    }).done(function (rtn) {
+        if (action == "cleanup") {
+            window.location.href = "./index.php" // Goto landing page.
+        }
+        else if (action == "is_new") {
+            if (parseInt(rtn) > 0) {
+                var yes = confirm('Account is validated. Send new credentials?');
+                if(!yes)
+                    callServer('cleanup');
+                else
+                    callServer('do_signup', parseInt(rtn));
+            }
+            else {
+                // After error alert app exit to landing page.
+                var message = "Unable to find your records. Be sure to use your correct Dob, First and Last name and Email of record. If you have opted out of email with none on file then leave blank.";
+                eModal.alert(message);
+            }
+        }
+        else if (action == 'do_signup') {
+            if (rtn == "") {
+                var message = "Unable to either create credentials or send email.";
+                alert(message);
+                return false;
+            }
+            //alert(rtn); // sync alert.. rtn holds username and password for testing.
+            var message = "Your new credentials have been sent. Check your email inbox and also possibly your spam folder. Once you log into your patient portal feel free to make an appointment or send us a secure message. We look forward to seeing you soon."
+            eModal.alert(message); // This is an async call. The modal close event exits us to portal landing page after cleanup.
+        }
+    }).fail(function (err) {
+        var message = "Something went wrong.";
+        alert(message);
+    });
+}
+</script>
+
+
+<div id="gritter-notice-wrapper"><div id="gritter-item-1" class="gritter-item-wrapper my-nonsticky-class" style="" role="alert"><div class="gritter-top"></div><div class="gritter-item"><a class="gritter-close" href="#" tabindex="1">Close Notification</a><div class="gritter-without-image"><span class="gritter-title"><span class="red">Oops!</span></span><p>Something went wrong. Please try again.</p></div><div style="clear:both"></div></div><div class="gritter-bottom"></div></div></div></body></html>
+
+ERROR ERROR ERROR ERROR  LOGIN FAILED TO COMPLETE, didn't find expected message ERROR ERROR ERROR 
+docker exec -it -w /helpers/request_crawler/ -u wc openemr-user bash -i -c "timeout --signal KILL 14398s node main.js request_crawler http://localhost/openemr/portal /p/Witcher-experiment/interpreter-targets/openemr/user "
+[
+  '/home/wc/.nvm/versions/node/v17.2.0/bin/node',
+  '/helpers/request_crawler/main.js',
+  'request_crawler',
+  'http://localhost/openemr/portal',
+  '/p/Witcher-experiment/interpreter-targets/openemr/user'
+]
+ ************************* LOADING INCOMING ******************************
+ -- GET http://localhost/openemr/portal urllen=31 postlen=0 -- 
+ -- GET http://172.17.0.3/openemr/portal/home.php urllen=41 postlen=0 -- 
+InterceptedRequest -- GET http://localhost/openemr/portal/ urllen=32 postlen=0 -- 
+PageForms -- GET http://172.17.0.3/openemr/portal/messaging/secure_chat.php urllen=58 postlen=5 -- 
+PageForms -- GET http://172.17.0.3/openemr/portal/messaging/secure_chat.php urllen=58 postlen=12 -- 
+PageForms -- GET http://172.17.0.3/openemr/portal/messaging/secure_chat.php urllen=58 postlen=25 -- 
+PageForms -- GET http://172.17.0.3/openemr/portal/messaging/secure_chat.php urllen=58 postlen=14 -- 
+OnPageAnchor -- GET http://172.17.0.3/openemr/portal/patient/provider urllen=49 postlen=0 -- 
+PageForms -- POST http://172.17.0.3/openemr/portal/report/pat_ledger.php?form=1&patient_id=1 urllen=74 postlen=138 -- 
+PageForms -- POST http://172.17.0.3/openemr/ccr/createCCR.php?portal_auth_two=1 urllen=61 postlen=98 -- 
+PageForms -- POST http://172.17.0.3/openemr/ccr/createCCR.php?portal_auth_two=1 urllen=61 postlen=89 -- 
+PageForms -- POST http://172.17.0.3/openemr/ccr/createCCR.php?portal_auth_two=1 urllen=61 postlen=81 -- 
+InterceptedRequest -- GET http://localhost/openemr/portal/?v=41 urllen=37 postlen=0 -- 
+Started worker  0
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 0 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 0 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 0 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+[38;5;28mhttp://localhost/openemr/portal, [38;5;11m1[0m
+[38;5;28mhttp://172.17.0.3/openemr/portal/home.php, [38;5;11m1[0m
+[38;5;28mhttp://localhost/openemr/portal/, [38;5;11m1[0m
+[38;5;28mhttp://172.17.0.3/openemr/portal/messaging/secure_chat.php, [38;5;11m1[0m
+[38;5;28mhttp://172.17.0.3/openemr/portal/messaging/secure_chat.php, [38;5;11m1[0m
+[38;5;28mhttp://172.17.0.3/openemr/portal/messaging/secure_chat.php, [38;5;11m0[0m
+[38;5;28mhttp://172.17.0.3/openemr/portal/messaging/secure_chat.php, [38;5;11m0[0m
+[38;5;28mhttp://172.17.0.3/openemr/portal/patient/provider, [38;5;11m1[0m
+[38;5;28mhttp://172.17.0.3/openemr/portal/report/pat_ledger.php?form=1&patient_id=1, [38;5;11m0[0m
+[38;5;28mhttp://172.17.0.3/openemr/ccr/createCCR.php?portal_auth_two=1, [38;5;11m0[0m
+[38;5;28mhttp://172.17.0.3/openemr/ccr/createCCR.php?portal_auth_two=1, [38;5;11m0[0m
+[38;5;28mhttp://172.17.0.3/openemr/ccr/createCCR.php?portal_auth_two=1, [38;5;11m0[0m
+[38;5;28mhttp://localhost/openemr/portal/?v=41, [38;5;11m0[0m
+
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 0 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 0 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 0 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+[
+  'GET http://localhost/openemr/portal ',
+  'GET http://172.17.0.2/openemr/portal/home.php ',
+  'GET http://localhost/openemr/portal/ ',
+  'GET http://172.17.0.3/openemr/portal/messaging/secure_chat.php =&=&=',
+  'GET http://172.17.0.3/openemr/portal/messaging/secure_chat.php =&files=&=&='
+]
+CURRENT ROUND VALUE HAS INCREASED TO  1
+[
+  'GET http://localhost/openemr/portal ',
+  'GET http://172.17.0.2/openemr/portal/home.php ',
+  'GET http://localhost/openemr/portal/ ',
+  'GET http://172.17.0.3/openemr/portal/messaging/secure_chat.php =&=&=',
+  'GET http://172.17.0.3/openemr/portal/messaging/secure_chat.php =&files=&=&='
+]
+[[38;5;5mWC[0m] Browser launching with  url=http://172.17.0.3/openemr/portal/messaging/secure_chat.php 
+[WC] Performing login http://172.17.0.2/openemr/portal
+[Login] REQUESTING URL  http://172.17.0.2/openemr/portal
+[Login] URL GOTO'ed 
+<!DOCTYPE html><html><head>
+    <title>Patient Portal Login</title>
+    
+<link rel="stylesheet" href="/openemr/public/assets/bootstrap-3-3-4/dist/css/bootstrap.min.css?v=41" type="text/css">
+<link rel="stylesheet" href="?v=41" type="text/css">
+<link rel="stylesheet" href="/openemr/public/assets/font-awesome-4-6-3/css/font-awesome.min.css?v=41" type="text/css">
+<link rel="stylesheet" href="/openemr/public/assets/jquery-datetimepicker-2-5-4/build/jquery.datetimepicker.min.css?v=41" type="text/css">
+
+<script type="text/javascript" src="/openemr/public/assets/jquery-min-3-1-1/index.js?v=41"></script>
+<script type="text/javascript" src="/openemr/public/assets/bootstrap-3-3-4/dist/js/bootstrap.min.js?v=41"></script>
+<script type="text/javascript" src="/openemr/public/assets/jquery-datetimepicker-2-5-4/build/jquery.datetimepicker.full.min.js?v=41"></script>
+<script type="text/javascript" src="/openemr/library/textformat.js?v=41"></script>
+<script type="text/javascript" src="/openemr/library/dialog.js?v=41"></script>
+
+    <script type="text/javascript" src="/openemr/public/assets/jquery.gritter-1-7-4/js/jquery.gritter.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/openemr/public/assets/jquery.gritter-1-7-4/css/jquery.gritter.css">
+    <script type="text/javascript" src="/openemr/public/assets/emodal-1-2-65/dist/eModal.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/base.css?v=41">
+    <link rel="stylesheet" type="text/css" href="assets/css/register.css?v=41">
+<script type="text/javascript">
+    function process() {
+        if (!(validate())) {
+            alert ('Field(s) are missing!');
+            return false;
+        }
+    }
+    function validate() {
+            var pass=true;
+        if (document.getElementById('uname').value == "") {
+        document.getElementById('uname').style.border = "1px solid red";
+                pass=false;
+        }
+        if (document.getElementById('pass').value == "") {
+        document.getElementById('pass').style.border = "1px solid red";
+                pass=false;
+        }
+            return pass;
+    }
+    function process_new_pass() {
+        if (!(validate_new_pass())) {
+            alert ('Field(s) are missing!');
+            return false;
+        }
+        if (document.getElementById('pass_new').value != document.getElementById('pass_new_confirm').value) {
+            alert ('The new password fields are not the same.');
+            return false;
+        }
+        if (document.getElementById('pass').value == document.getElementById('pass_new').value) {
+            alert ('The new password can not be the same as the current password.');
+            return false;
+        }
+    }
+
+    function validate_new_pass() {
+        var pass=true;
+        if (document.getElementById('uname').value == "") {
+            document.getElementById('uname').style.border = "1px solid red";
+            pass=false;
+        }
+        if (document.getElementById('pass').value == "") {
+            document.getElementById('pass').style.border = "1px solid red";
+            pass=false;
+        }
+        if (document.getElementById('pass_new').value == "") {
+            document.getElementById('pass_new').style.border = "1px solid red";
+            pass=false;
+        }
+        if (document.getElementById('pass_new_confirm').value == "") {
+            document.getElementById('pass_new_confirm').style.border = "1px solid red";
+            pass=false;
+        }
+        return pass;
+    }
+</script>
+</head>
+<body class="skin-blue">
+<br><br>
+<div class="container text-center">
+      <!-- Main logon -->
+    <div id="wrapper" class="row centerwrapper text-center">
+    <img style="width:65%" src="/openemr/public/images/login-logo.png">
+    <form class="form-inline text-center" action="get_patient_info.php" method="POST" onsubmit="return process()">
+        <div class="row">
+                <div class="col-sm-12 text-center">
+                    <fieldset>
+                        <legend class="bg-primary"><h3>Patient Portal Login</h3></legend>
+                        <div class="well">
+                        <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group inline">
+                                        <label class="control-label" for="uname">Username</label>
+                                        <div class="controls inline-inputs">
+                                            <input type="text" class="form-control" name="uname" id="uname" autocomplete="on" required="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group inline">
+                                        <label class="control-label" for="pass">Password</label>
+                                        <div class="controls inline-inputs">
+                                            <input class="form-control" name="pass" id="pass" type="password" required="" autocomplete="on">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 form-group">
+                                    <label class="control-label" for="passaddon">E-Mail Address</label>
+                                    <div class="controls inline-inputs">
+                                        <input class="form-control" style="width: 100%" name="passaddon" id="passaddon" placeholder="on file email" type="email" autocomplete="on" value="e@mail.com">
+                                    </div>
+                                </div>
+                            </div>
+                                                                        <div class="form-group row">
+                            <label for="selLanguage">Language</label>
+                            <select class="form-control" id="selLanguage" name="languageChoice">
+                            <option selected="selected" value="1">Default - English (Standard)</option>
+<option value="27">Albanian</option>
+<option value="19">Arabic</option>
+<option value="13">Armenian</option>
+<option value="14">Bahasa Indonesia</option>
+<option value="10">Chinese (Simplified)</option>
+<option value="11">Chinese (Traditional)</option>
+<option value="28">Czech</option>
+<option value="20">Danish</option>
+<option value="6">Dutch</option>
+<option value="16">English (Indian)</option>
+<option value="1">English (Standard)</option>
+<option value="32">Finnish</option>
+<option value="9">French (Canadian)</option>
+<option value="8">French (Standard)</option>
+<option value="5">German</option>
+<option value="15">Greek</option>
+<option value="7">Hebrew</option>
+<option value="24">Hindi</option>
+<option value="23">Italian</option>
+<option value="31">Japanese</option>
+<option value="33">Marathi</option>
+<option value="30">Persian</option>
+<option value="22">Polish</option>
+<option value="18">Portuguese (Brazilian)</option>
+<option value="17">Portuguese (European)</option>
+<option value="25">Romanian</option>
+<option value="12">Russian</option>
+<option value="4">Spanish (Latin American)</option>
+<option value="3">Spanish (Spain)</option>
+<option value="2">Swedish</option>
+<option value="34">Tamil</option>
+<option value="21">Turkish</option>
+<option value="29">Ukrainian</option>
+<option value="26">Vietnamese</option>
+                          </select>
+                        </div>
+                                                </div>
+                        <div class="col-sm-12 col-md-12">
+                                                            <button class="btn btn-default pull-left" onclick="location.replace('./account/register.php')">Register</button>
+                                                                                        <button class="btn btn-success pull-right" type="submit">Log In</button>
+                        </div>
+                    </fieldset>
+                </div>
+          </div>
+                </form>
+    </div><!-- div wrapper -->
+     <!--  logon wrapper -->
+</div><!-- container -->
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+    var unique_id = $.gritter.add({
+        title: '<span class="red">Oops!</span>',
+        text: 'Something went wrong. Please try again.',
+        sticky: false,
+        time: '5000',
+        class_name: 'my-nonsticky-class'
+    });
+
+return false;
+});
+/* Test Data
+$("#emailInput").val("me@me.com");
+$("#fname").val("Jerry");
+$("#lname").val("Padgett");
+$("#dob").val("1919-03-03"); */
+
+function callServer(action, value, value2, last, first) {
+    var data = {
+        'action' : action,
+        'value' : value,
+        'dob' : $("#dob").val(),
+        'last' : $("#lname").val(),
+        'first' : $("#fname").val(),
+        'email' : $("#emailInput").val()
+    }
+    if (action == 'do_signup') {
+        data = {
+            'action': action,
+            'pid': value
+        };
+    }
+    else if (action == 'notify_admin') {
+        data = {
+            'action': action,
+            'pid': value,
+            'provider': value2
+        };
+    }
+    else if (action == 'cleanup') {
+        data = {
+            'action': action
+        }
+    };
+    $.ajax({
+        type : 'GET',
+        url : './account/account.php',
+        data : data
+    }).done(function (rtn) {
+        if (action == "cleanup") {
+            window.location.href = "./index.php" // Goto landing page.
+        }
+        else if (action == "is_new") {
+            if (parseInt(rtn) > 0) {
+                var yes = confirm('Account is validated. Send new credentials?');
+                if(!yes)
+                    callServer('cleanup');
+                else
+                    callServer('do_signup', parseInt(rtn));
+            }
+            else {
+                // After error alert app exit to landing page.
+                var message = "Unable to find your records. Be sure to use your correct Dob, First and Last name and Email of record. If you have opted out of email with none on file then leave blank.";
+                eModal.alert(message);
+            }
+        }
+        else if (action == 'do_signup') {
+            if (rtn == "") {
+                var message = "Unable to either create credentials or send email.";
+                alert(message);
+                return false;
+            }
+            //alert(rtn); // sync alert.. rtn holds username and password for testing.
+            var message = "Your new credentials have been sent. Check your email inbox and also possibly your spam folder. Once you log into your patient portal feel free to make an appointment or send us a secure message. We look forward to seeing you soon."
+            eModal.alert(message); // This is an async call. The modal close event exits us to portal landing page after cleanup.
+        }
+    }).fail(function (err) {
+        var message = "Something went wrong.";
+        alert(message);
+    });
+}
+</script>
+
+
+<div id="gritter-notice-wrapper"><div id="gritter-item-1" class="gritter-item-wrapper my-nonsticky-class" style="" role="alert"><div class="gritter-top"></div><div class="gritter-item"><a class="gritter-close" href="#" tabindex="1">Close Notification</a><div class="gritter-without-image"><span class="gritter-title"><span class="red">Oops!</span></span><p>Something went wrong. Please try again.</p></div><div style="clear:both"></div></div><div class="gritter-bottom"></div></div></div></body></html>
+
+ERROR ERROR ERROR ERROR  LOGIN FAILED TO COMPLETE, didn't find expected message ERROR ERROR ERROR 
+docker exec -it -w /helpers/request_crawler/ -u wc openemr-user bash -i -c "timeout --signal KILL 14398s node main.js request_crawler http://localhost/openemr/portal /p/Witcher-experiment/interpreter-targets/openemr/user "
+[
+  '/home/wc/.nvm/versions/node/v17.2.0/bin/node',
+  '/helpers/request_crawler/main.js',
+  'request_crawler',
+  'http://localhost/openemr/portal',
+  '/p/Witcher-experiment/interpreter-targets/openemr/user'
+]
+ ************************* LOADING INCOMING ******************************
+ -- GET http://172.17.0.2/openemr//admin urllen=32 postlen=0 -- 
+ -- GET http://172.17.0.2/openemr/ urllen=26 postlen=0 -- 
+Started worker  0
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+[38;5;28mhttp://172.17.0.2/openemr//admin, [38;5;11m2[0m
+[38;5;28mhttp://172.17.0.2/openemr/, [38;5;11m1[0m
+
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+[
+  'GET http://172.17.0.2/openemr//admin ',
+  'GET http://172.17.0.2/openemr/ '
+]
+CURRENT ROUND VALUE HAS INCREASED TO  2
+[
+  'GET http://172.17.0.2/openemr//admin ',
+  'GET http://172.17.0.2/openemr/ '
+]
+[[38;5;5mWC[0m] Browser launching with  url=http://172.17.0.2/openemr/ 
+[WC] Performing login http://172.17.0.2/openemr/portal
+[Login] REQUESTING URL  http://172.17.0.2/openemr/portal
+[Login] URL GOTO'ed 
+<!DOCTYPE html><html><head>
+    <title>Patient Portal Login</title>
+    
+<link rel="stylesheet" href="/openemr/public/assets/bootstrap-3-3-4/dist/css/bootstrap.min.css?v=41" type="text/css">
+<link rel="stylesheet" href="?v=41" type="text/css">
+<link rel="stylesheet" href="/openemr/public/assets/font-awesome-4-6-3/css/font-awesome.min.css?v=41" type="text/css">
+<link rel="stylesheet" href="/openemr/public/assets/jquery-datetimepicker-2-5-4/build/jquery.datetimepicker.min.css?v=41" type="text/css">
+
+<script type="text/javascript" src="/openemr/public/assets/jquery-min-3-1-1/index.js?v=41"></script>
+<script type="text/javascript" src="/openemr/public/assets/bootstrap-3-3-4/dist/js/bootstrap.min.js?v=41"></script>
+<script type="text/javascript" src="/openemr/public/assets/jquery-datetimepicker-2-5-4/build/jquery.datetimepicker.full.min.js?v=41"></script>
+<script type="text/javascript" src="/openemr/library/textformat.js?v=41"></script>
+<script type="text/javascript" src="/openemr/library/dialog.js?v=41"></script>
+
+    <script type="text/javascript" src="/openemr/public/assets/jquery.gritter-1-7-4/js/jquery.gritter.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/openemr/public/assets/jquery.gritter-1-7-4/css/jquery.gritter.css">
+    <script type="text/javascript" src="/openemr/public/assets/emodal-1-2-65/dist/eModal.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/base.css?v=41">
+    <link rel="stylesheet" type="text/css" href="assets/css/register.css?v=41">
+<script type="text/javascript">
+    function process() {
+        if (!(validate())) {
+            alert ('Field(s) are missing!');
+            return false;
+        }
+    }
+    function validate() {
+            var pass=true;
+        if (document.getElementById('uname').value == "") {
+        document.getElementById('uname').style.border = "1px solid red";
+                pass=false;
+        }
+        if (document.getElementById('pass').value == "") {
+        document.getElementById('pass').style.border = "1px solid red";
+                pass=false;
+        }
+            return pass;
+    }
+    function process_new_pass() {
+        if (!(validate_new_pass())) {
+            alert ('Field(s) are missing!');
+            return false;
+        }
+        if (document.getElementById('pass_new').value != document.getElementById('pass_new_confirm').value) {
+            alert ('The new password fields are not the same.');
+            return false;
+        }
+        if (document.getElementById('pass').value == document.getElementById('pass_new').value) {
+            alert ('The new password can not be the same as the current password.');
+            return false;
+        }
+    }
+
+    function validate_new_pass() {
+        var pass=true;
+        if (document.getElementById('uname').value == "") {
+            document.getElementById('uname').style.border = "1px solid red";
+            pass=false;
+        }
+        if (document.getElementById('pass').value == "") {
+            document.getElementById('pass').style.border = "1px solid red";
+            pass=false;
+        }
+        if (document.getElementById('pass_new').value == "") {
+            document.getElementById('pass_new').style.border = "1px solid red";
+            pass=false;
+        }
+        if (document.getElementById('pass_new_confirm').value == "") {
+            document.getElementById('pass_new_confirm').style.border = "1px solid red";
+            pass=false;
+        }
+        return pass;
+    }
+</script>
+</head>
+<body class="skin-blue">
+<br><br>
+<div class="container text-center">
+      <!-- Main logon -->
+    <div id="wrapper" class="row centerwrapper text-center">
+    <img style="width:65%" src="/openemr/public/images/login-logo.png">
+    <form class="form-inline text-center" action="get_patient_info.php" method="POST" onsubmit="return process()">
+        <div class="row">
+                <div class="col-sm-12 text-center">
+                    <fieldset>
+                        <legend class="bg-primary"><h3>Patient Portal Login</h3></legend>
+                        <div class="well">
+                        <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group inline">
+                                        <label class="control-label" for="uname">Username</label>
+                                        <div class="controls inline-inputs">
+                                            <input type="text" class="form-control" name="uname" id="uname" autocomplete="on" required="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group inline">
+                                        <label class="control-label" for="pass">Password</label>
+                                        <div class="controls inline-inputs">
+                                            <input class="form-control" name="pass" id="pass" type="password" required="" autocomplete="on">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 form-group">
+                                    <label class="control-label" for="passaddon">E-Mail Address</label>
+                                    <div class="controls inline-inputs">
+                                        <input class="form-control" style="width: 100%" name="passaddon" id="passaddon" placeholder="on file email" type="email" autocomplete="on" value="e@mail.com">
+                                    </div>
+                                </div>
+                            </div>
+                                                                        <div class="form-group row">
+                            <label for="selLanguage">Language</label>
+                            <select class="form-control" id="selLanguage" name="languageChoice">
+                            <option selected="selected" value="1">Default - English (Standard)</option>
+<option value="27">Albanian</option>
+<option value="19">Arabic</option>
+<option value="13">Armenian</option>
+<option value="14">Bahasa Indonesia</option>
+<option value="10">Chinese (Simplified)</option>
+<option value="11">Chinese (Traditional)</option>
+<option value="28">Czech</option>
+<option value="20">Danish</option>
+<option value="6">Dutch</option>
+<option value="16">English (Indian)</option>
+<option value="1">English (Standard)</option>
+<option value="32">Finnish</option>
+<option value="9">French (Canadian)</option>
+<option value="8">French (Standard)</option>
+<option value="5">German</option>
+<option value="15">Greek</option>
+<option value="7">Hebrew</option>
+<option value="24">Hindi</option>
+<option value="23">Italian</option>
+<option value="31">Japanese</option>
+<option value="33">Marathi</option>
+<option value="30">Persian</option>
+<option value="22">Polish</option>
+<option value="18">Portuguese (Brazilian)</option>
+<option value="17">Portuguese (European)</option>
+<option value="25">Romanian</option>
+<option value="12">Russian</option>
+<option value="4">Spanish (Latin American)</option>
+<option value="3">Spanish (Spain)</option>
+<option value="2">Swedish</option>
+<option value="34">Tamil</option>
+<option value="21">Turkish</option>
+<option value="29">Ukrainian</option>
+<option value="26">Vietnamese</option>
+                          </select>
+                        </div>
+                                                </div>
+                        <div class="col-sm-12 col-md-12">
+                                                            <button class="btn btn-default pull-left" onclick="location.replace('./account/register.php')">Register</button>
+                                                                                        <button class="btn btn-success pull-right" type="submit">Log In</button>
+                        </div>
+                    </fieldset>
+                </div>
+          </div>
+                </form>
+    </div><!-- div wrapper -->
+     <!--  logon wrapper -->
+</div><!-- container -->
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+    var unique_id = $.gritter.add({
+        title: '<span class="red">Oops!</span>',
+        text: 'Something went wrong. Please try again.',
+        sticky: false,
+        time: '5000',
+        class_name: 'my-nonsticky-class'
+    });
+
+return false;
+});
+/* Test Data
+$("#emailInput").val("me@me.com");
+$("#fname").val("Jerry");
+$("#lname").val("Padgett");
+$("#dob").val("1919-03-03"); */
+
+function callServer(action, value, value2, last, first) {
+    var data = {
+        'action' : action,
+        'value' : value,
+        'dob' : $("#dob").val(),
+        'last' : $("#lname").val(),
+        'first' : $("#fname").val(),
+        'email' : $("#emailInput").val()
+    }
+    if (action == 'do_signup') {
+        data = {
+            'action': action,
+            'pid': value
+        };
+    }
+    else if (action == 'notify_admin') {
+        data = {
+            'action': action,
+            'pid': value,
+            'provider': value2
+        };
+    }
+    else if (action == 'cleanup') {
+        data = {
+            'action': action
+        }
+    };
+    $.ajax({
+        type : 'GET',
+        url : './account/account.php',
+        data : data
+    }).done(function (rtn) {
+        if (action == "cleanup") {
+            window.location.href = "./index.php" // Goto landing page.
+        }
+        else if (action == "is_new") {
+            if (parseInt(rtn) > 0) {
+                var yes = confirm('Account is validated. Send new credentials?');
+                if(!yes)
+                    callServer('cleanup');
+                else
+                    callServer('do_signup', parseInt(rtn));
+            }
+            else {
+                // After error alert app exit to landing page.
+                var message = "Unable to find your records. Be sure to use your correct Dob, First and Last name and Email of record. If you have opted out of email with none on file then leave blank.";
+                eModal.alert(message);
+            }
+        }
+        else if (action == 'do_signup') {
+            if (rtn == "") {
+                var message = "Unable to either create credentials or send email.";
+                alert(message);
+                return false;
+            }
+            //alert(rtn); // sync alert.. rtn holds username and password for testing.
+            var message = "Your new credentials have been sent. Check your email inbox and also possibly your spam folder. Once you log into your patient portal feel free to make an appointment or send us a secure message. We look forward to seeing you soon."
+            eModal.alert(message); // This is an async call. The modal close event exits us to portal landing page after cleanup.
+        }
+    }).fail(function (err) {
+        var message = "Something went wrong.";
+        alert(message);
+    });
+}
+</script>
+
+
+<div id="gritter-notice-wrapper"><div id="gritter-item-1" class="gritter-item-wrapper my-nonsticky-class" style="" role="alert"><div class="gritter-top"></div><div class="gritter-item"><a class="gritter-close" href="#" tabindex="1">Close Notification</a><div class="gritter-without-image"><span class="gritter-title"><span class="red">Oops!</span></span><p>Something went wrong. Please try again.</p></div><div style="clear:both"></div></div><div class="gritter-bottom"></div></div></div></body></html>
+
+ERROR ERROR ERROR ERROR  LOGIN FAILED TO COMPLETE, didn't find expected message ERROR ERROR ERROR 
+docker exec -it -w /helpers/request_crawler/ -u wc openemr-user bash -i -c "timeout --signal KILL 14398s node main.js request_crawler http://localhost/openemr/portal /p/Witcher-experiment/interpreter-targets/openemr/user "
+[
+  '/home/wc/.nvm/versions/node/v17.2.0/bin/node',
+  '/helpers/request_crawler/main.js',
+  'request_crawler',
+  'http://localhost/openemr/portal',
+  '/p/Witcher-experiment/interpreter-targets/openemr/user'
+]
+***************** No saved data found **************************
+Started worker  0
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+[38;5;28mhttp://localhost/openemr/portal, [38;5;11m0[0m
+
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+[ 'GET http://localhost/openemr/portal ' ]
+[[38;5;5mWC[0m] Browser launching with  url=http://localhost/openemr/portal 
+[WC] Performing login http://172.17.0.3/openemr/portal
+[Login] REQUESTING URL  http://172.17.0.3/openemr/portal
+[Login] URL GOTO'ed 
+<!DOCTYPE html><html><head>
+    <title>Patient Portal Login</title>
+    
+<link rel="stylesheet" href="/openemr/public/assets/bootstrap-3-3-4/dist/css/bootstrap.min.css?v=41" type="text/css">
+<link rel="stylesheet" href="?v=41" type="text/css">
+<link rel="stylesheet" href="/openemr/public/assets/font-awesome-4-6-3/css/font-awesome.min.css?v=41" type="text/css">
+<link rel="stylesheet" href="/openemr/public/assets/jquery-datetimepicker-2-5-4/build/jquery.datetimepicker.min.css?v=41" type="text/css">
+
+<script type="text/javascript" src="/openemr/public/assets/jquery-min-3-1-1/index.js?v=41"></script>
+<script type="text/javascript" src="/openemr/public/assets/bootstrap-3-3-4/dist/js/bootstrap.min.js?v=41"></script>
+<script type="text/javascript" src="/openemr/public/assets/jquery-datetimepicker-2-5-4/build/jquery.datetimepicker.full.min.js?v=41"></script>
+<script type="text/javascript" src="/openemr/library/textformat.js?v=41"></script>
+<script type="text/javascript" src="/openemr/library/dialog.js?v=41"></script>
+
+    <script type="text/javascript" src="/openemr/public/assets/jquery.gritter-1-7-4/js/jquery.gritter.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/openemr/public/assets/jquery.gritter-1-7-4/css/jquery.gritter.css">
+    <script type="text/javascript" src="/openemr/public/assets/emodal-1-2-65/dist/eModal.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/base.css?v=41">
+    <link rel="stylesheet" type="text/css" href="assets/css/register.css?v=41">
+<script type="text/javascript">
+    function process() {
+        if (!(validate())) {
+            alert ('Field(s) are missing!');
+            return false;
+        }
+    }
+    function validate() {
+            var pass=true;
+        if (document.getElementById('uname').value == "") {
+        document.getElementById('uname').style.border = "1px solid red";
+                pass=false;
+        }
+        if (document.getElementById('pass').value == "") {
+        document.getElementById('pass').style.border = "1px solid red";
+                pass=false;
+        }
+            return pass;
+    }
+    function process_new_pass() {
+        if (!(validate_new_pass())) {
+            alert ('Field(s) are missing!');
+            return false;
+        }
+        if (document.getElementById('pass_new').value != document.getElementById('pass_new_confirm').value) {
+            alert ('The new password fields are not the same.');
+            return false;
+        }
+        if (document.getElementById('pass').value == document.getElementById('pass_new').value) {
+            alert ('The new password can not be the same as the current password.');
+            return false;
+        }
+    }
+
+    function validate_new_pass() {
+        var pass=true;
+        if (document.getElementById('uname').value == "") {
+            document.getElementById('uname').style.border = "1px solid red";
+            pass=false;
+        }
+        if (document.getElementById('pass').value == "") {
+            document.getElementById('pass').style.border = "1px solid red";
+            pass=false;
+        }
+        if (document.getElementById('pass_new').value == "") {
+            document.getElementById('pass_new').style.border = "1px solid red";
+            pass=false;
+        }
+        if (document.getElementById('pass_new_confirm').value == "") {
+            document.getElementById('pass_new_confirm').style.border = "1px solid red";
+            pass=false;
+        }
+        return pass;
+    }
+</script>
+</head>
+<body class="skin-blue">
+<br><br>
+<div class="container text-center">
+      <!-- Main logon -->
+    <div id="wrapper" class="row centerwrapper text-center">
+    <img style="width:65%" src="/openemr/public/images/login-logo.png">
+    <form class="form-inline text-center" action="get_patient_info.php" method="POST" onsubmit="return process()">
+        <div class="row">
+                <div class="col-sm-12 text-center">
+                    <fieldset>
+                        <legend class="bg-primary"><h3>Patient Portal Login</h3></legend>
+                        <div class="well">
+                        <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group inline">
+                                        <label class="control-label" for="uname">Username</label>
+                                        <div class="controls inline-inputs">
+                                            <input type="text" class="form-control" name="uname" id="uname" autocomplete="on" required="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group inline">
+                                        <label class="control-label" for="pass">Password</label>
+                                        <div class="controls inline-inputs">
+                                            <input class="form-control" name="pass" id="pass" type="password" required="" autocomplete="on">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 form-group">
+                                    <label class="control-label" for="passaddon">E-Mail Address</label>
+                                    <div class="controls inline-inputs">
+                                        <input class="form-control" style="width: 100%" name="passaddon" id="passaddon" placeholder="on file email" type="email" autocomplete="on" value="e@mail.com">
+                                    </div>
+                                </div>
+                            </div>
+                                                                        <div class="form-group row">
+                            <label for="selLanguage">Language</label>
+                            <select class="form-control" id="selLanguage" name="languageChoice">
+                            <option selected="selected" value="1">Default - English (Standard)</option>
+<option value="27">Albanian</option>
+<option value="19">Arabic</option>
+<option value="13">Armenian</option>
+<option value="14">Bahasa Indonesia</option>
+<option value="10">Chinese (Simplified)</option>
+<option value="11">Chinese (Traditional)</option>
+<option value="28">Czech</option>
+<option value="20">Danish</option>
+<option value="6">Dutch</option>
+<option value="16">English (Indian)</option>
+<option value="1">English (Standard)</option>
+<option value="32">Finnish</option>
+<option value="9">French (Canadian)</option>
+<option value="8">French (Standard)</option>
+<option value="5">German</option>
+<option value="15">Greek</option>
+<option value="7">Hebrew</option>
+<option value="24">Hindi</option>
+<option value="23">Italian</option>
+<option value="31">Japanese</option>
+<option value="33">Marathi</option>
+<option value="30">Persian</option>
+<option value="22">Polish</option>
+<option value="18">Portuguese (Brazilian)</option>
+<option value="17">Portuguese (European)</option>
+<option value="25">Romanian</option>
+<option value="12">Russian</option>
+<option value="4">Spanish (Latin American)</option>
+<option value="3">Spanish (Spain)</option>
+<option value="2">Swedish</option>
+<option value="34">Tamil</option>
+<option value="21">Turkish</option>
+<option value="29">Ukrainian</option>
+<option value="26">Vietnamese</option>
+                          </select>
+                        </div>
+                                                </div>
+                        <div class="col-sm-12 col-md-12">
+                                                            <button class="btn btn-default pull-left" onclick="location.replace('./account/register.php')">Register</button>
+                                                                                        <button class="btn btn-success pull-right" type="submit">Log In</button>
+                        </div>
+                    </fieldset>
+                </div>
+          </div>
+                </form>
+    </div><!-- div wrapper -->
+     <!--  logon wrapper -->
+</div><!-- container -->
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+    var unique_id = $.gritter.add({
+        title: '<span class="red">Oops!</span>',
+        text: 'Something went wrong. Please try again.',
+        sticky: false,
+        time: '5000',
+        class_name: 'my-nonsticky-class'
+    });
+
+return false;
+});
+/* Test Data
+$("#emailInput").val("me@me.com");
+$("#fname").val("Jerry");
+$("#lname").val("Padgett");
+$("#dob").val("1919-03-03"); */
+
+function callServer(action, value, value2, last, first) {
+    var data = {
+        'action' : action,
+        'value' : value,
+        'dob' : $("#dob").val(),
+        'last' : $("#lname").val(),
+        'first' : $("#fname").val(),
+        'email' : $("#emailInput").val()
+    }
+    if (action == 'do_signup') {
+        data = {
+            'action': action,
+            'pid': value
+        };
+    }
+    else if (action == 'notify_admin') {
+        data = {
+            'action': action,
+            'pid': value,
+            'provider': value2
+        };
+    }
+    else if (action == 'cleanup') {
+        data = {
+            'action': action
+        }
+    };
+    $.ajax({
+        type : 'GET',
+        url : './account/account.php',
+        data : data
+    }).done(function (rtn) {
+        if (action == "cleanup") {
+            window.location.href = "./index.php" // Goto landing page.
+        }
+        else if (action == "is_new") {
+            if (parseInt(rtn) > 0) {
+                var yes = confirm('Account is validated. Send new credentials?');
+                if(!yes)
+                    callServer('cleanup');
+                else
+                    callServer('do_signup', parseInt(rtn));
+            }
+            else {
+                // After error alert app exit to landing page.
+                var message = "Unable to find your records. Be sure to use your correct Dob, First and Last name and Email of record. If you have opted out of email with none on file then leave blank.";
+                eModal.alert(message);
+            }
+        }
+        else if (action == 'do_signup') {
+            if (rtn == "") {
+                var message = "Unable to either create credentials or send email.";
+                alert(message);
+                return false;
+            }
+            //alert(rtn); // sync alert.. rtn holds username and password for testing.
+            var message = "Your new credentials have been sent. Check your email inbox and also possibly your spam folder. Once you log into your patient portal feel free to make an appointment or send us a secure message. We look forward to seeing you soon."
+            eModal.alert(message); // This is an async call. The modal close event exits us to portal landing page after cleanup.
+        }
+    }).fail(function (err) {
+        var message = "Something went wrong.";
+        alert(message);
+    });
+}
+</script>
+
+
+<div id="gritter-notice-wrapper"><div id="gritter-item-1" class="gritter-item-wrapper my-nonsticky-class" style="" role="alert"><div class="gritter-top"></div><div class="gritter-item"><a class="gritter-close" href="#" tabindex="1">Close Notification</a><div class="gritter-without-image"><span class="gritter-title"><span class="red">Oops!</span></span><p>Something went wrong. Please try again.</p></div><div style="clear:both"></div></div><div class="gritter-bottom"></div></div></div></body></html>
+
+ERROR ERROR ERROR ERROR  LOGIN FAILED TO COMPLETE, didn't find expected message ERROR ERROR ERROR 
+docker exec -it -w /helpers/request_crawler/ -u wc openemr-user bash -i -c "timeout --signal KILL 14398s node main.js request_crawler http://localhost/openemr/portal /p/Witcher-experiment/interpreter-targets/openemr/user "
+[
+  '/home/wc/.nvm/versions/node/v17.2.0/bin/node',
+  '/helpers/request_crawler/main.js',
+  'request_crawler',
+  'http://localhost/openemr/portal',
+  '/p/Witcher-experiment/interpreter-targets/openemr/user'
+]
+ ************************* LOADING INCOMING ******************************
+ -- GET http://localhost/openemr/portal urllen=31 postlen=0 -- 
+Started worker  0
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+[38;5;28mhttp://localhost/openemr/portal, [38;5;11m1[0m
+
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+DoNeDoNeDoNeDoNeDoNeDoNeDoNe 1 DoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNeDoNe
+[ 'GET http://localhost/openemr/portal ' ]
+CURRENT ROUND VALUE HAS INCREASED TO  2
+[ 'GET http://localhost/openemr/portal ' ]
+[[38;5;5mWC[0m] Browser launching with  url=http://localhost/openemr/portal 
+[WC] Performing login http://172.17.0.3/openemr/portal
+[Login] REQUESTING URL  http://172.17.0.3/openemr/portal
+[Login] URL GOTO'ed 
+<!DOCTYPE html><html><head>
+    <title>Patient Portal Login</title>
+    
+<link rel="stylesheet" href="/openemr/public/assets/bootstrap-3-3-4/dist/css/bootstrap.min.css?v=41" type="text/css">
+<link rel="stylesheet" href="?v=41" type="text/css">
+<link rel="stylesheet" href="/openemr/public/assets/font-awesome-4-6-3/css/font-awesome.min.css?v=41" type="text/css">
+<link rel="stylesheet" href="/openemr/public/assets/jquery-datetimepicker-2-5-4/build/jquery.datetimepicker.min.css?v=41" type="text/css">
+
+<script type="text/javascript" src="/openemr/public/assets/jquery-min-3-1-1/index.js?v=41"></script>
+<script type="text/javascript" src="/openemr/public/assets/bootstrap-3-3-4/dist/js/bootstrap.min.js?v=41"></script>
+<script type="text/javascript" src="/openemr/public/assets/jquery-datetimepicker-2-5-4/build/jquery.datetimepicker.full.min.js?v=41"></script>
+<script type="text/javascript" src="/openemr/library/textformat.js?v=41"></script>
+<script type="text/javascript" src="/openemr/library/dialog.js?v=41"></script>
+
+    <script type="text/javascript" src="/openemr/public/assets/jquery.gritter-1-7-4/js/jquery.gritter.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/openemr/public/assets/jquery.gritter-1-7-4/css/jquery.gritter.css">
+    <script type="text/javascript" src="/openemr/public/assets/emodal-1-2-65/dist/eModal.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/base.css?v=41">
+    <link rel="stylesheet" type="text/css" href="assets/css/register.css?v=41">
+<script type="text/javascript">
+    function process() {
+        if (!(validate())) {
+            alert ('Field(s) are missing!');
+            return false;
+        }
+    }
+    function validate() {
+            var pass=true;
+        if (document.getElementById('uname').value == "") {
+        document.getElementById('uname').style.border = "1px solid red";
+                pass=false;
+        }
+        if (document.getElementById('pass').value == "") {
+        document.getElementById('pass').style.border = "1px solid red";
+                pass=false;
+        }
+            return pass;
+    }
+    function process_new_pass() {
+        if (!(validate_new_pass())) {
+            alert ('Field(s) are missing!');
+            return false;
+        }
+        if (document.getElementById('pass_new').value != document.getElementById('pass_new_confirm').value) {
+            alert ('The new password fields are not the same.');
+            return false;
+        }
+        if (document.getElementById('pass').value == document.getElementById('pass_new').value) {
+            alert ('The new password can not be the same as the current password.');
+            return false;
+        }
+    }
+
+    function validate_new_pass() {
+        var pass=true;
+        if (document.getElementById('uname').value == "") {
+            document.getElementById('uname').style.border = "1px solid red";
+            pass=false;
+        }
+        if (document.getElementById('pass').value == "") {
+            document.getElementById('pass').style.border = "1px solid red";
+            pass=false;
+        }
+        if (document.getElementById('pass_new').value == "") {
+            document.getElementById('pass_new').style.border = "1px solid red";
+            pass=false;
+        }
+        if (document.getElementById('pass_new_confirm').value == "") {
+            document.getElementById('pass_new_confirm').style.border = "1px solid red";
+            pass=false;
+        }
+        return pass;
+    }
+</script>
+</head>
+<body class="skin-blue">
+<br><br>
+<div class="container text-center">
+      <!-- Main logon -->
+    <div id="wrapper" class="row centerwrapper text-center">
+    <img style="width:65%" src="/openemr/public/images/login-logo.png">
+    <form class="form-inline text-center" action="get_patient_info.php" method="POST" onsubmit="return process()">
+        <div class="row">
+                <div class="col-sm-12 text-center">
+                    <fieldset>
+                        <legend class="bg-primary"><h3>Patient Portal Login</h3></legend>
+                        <div class="well">
+                        <div class="row">
+                                <div class="col-sm-12">
+                                    <div class="form-group inline">
+                                        <label class="control-label" for="uname">Username</label>
+                                        <div class="controls inline-inputs">
+                                            <input type="text" class="form-control" name="uname" id="uname" autocomplete="on" required="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group inline">
+                                        <label class="control-label" for="pass">Password</label>
+                                        <div class="controls inline-inputs">
+                                            <input class="form-control" name="pass" id="pass" type="password" required="" autocomplete="on">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 form-group">
+                                    <label class="control-label" for="passaddon">E-Mail Address</label>
+                                    <div class="controls inline-inputs">
+                                        <input class="form-control" style="width: 100%" name="passaddon" id="passaddon" placeholder="on file email" type="email" autocomplete="on" value="e@mail.com">
+                                    </div>
+                                </div>
+                            </div>
+                                                                        <div class="form-group row">
+                            <label for="selLanguage">Language</label>
+                            <select class="form-control" id="selLanguage" name="languageChoice">
+                            <option selected="selected" value="1">Default - English (Standard)</option>
+<option value="27">Albanian</option>
+<option value="19">Arabic</option>
+<option value="13">Armenian</option>
+<option value="14">Bahasa Indonesia</option>
+<option value="10">Chinese (Simplified)</option>
+<option value="11">Chinese (Traditional)</option>
+<option value="28">Czech</option>
+<option value="20">Danish</option>
+<option value="6">Dutch</option>
+<option value="16">English (Indian)</option>
+<option value="1">English (Standard)</option>
+<option value="32">Finnish</option>
+<option value="9">French (Canadian)</option>
+<option value="8">French (Standard)</option>
+<option value="5">German</option>
+<option value="15">Greek</option>
+<option value="7">Hebrew</option>
+<option value="24">Hindi</option>
+<option value="23">Italian</option>
+<option value="31">Japanese</option>
+<option value="33">Marathi</option>
+<option value="30">Persian</option>
+<option value="22">Polish</option>
+<option value="18">Portuguese (Brazilian)</option>
+<option value="17">Portuguese (European)</option>
+<option value="25">Romanian</option>
+<option value="12">Russian</option>
+<option value="4">Spanish (Latin American)</option>
+<option value="3">Spanish (Spain)</option>
+<option value="2">Swedish</option>
+<option value="34">Tamil</option>
+<option value="21">Turkish</option>
+<option value="29">Ukrainian</option>
+<option value="26">Vietnamese</option>
+                          </select>
+                        </div>
+                                                </div>
+                        <div class="col-sm-12 col-md-12">
+                                                            <button class="btn btn-default pull-left" onclick="location.replace('./account/register.php')">Register</button>
+                                                                                        <button class="btn btn-success pull-right" type="submit">Log In</button>
+                        </div>
+                    </fieldset>
+                </div>
+          </div>
+                </form>
+    </div><!-- div wrapper -->
+     <!--  logon wrapper -->
+</div><!-- container -->
+
+<script type="text/javascript">
+$(document).ready(function() {
+
+    var unique_id = $.gritter.add({
+        title: '<span class="red">Oops!</span>',
+        text: 'Something went wrong. Please try again.',
+        sticky: false,
+        time: '5000',
+        class_name: 'my-nonsticky-class'
+    });
+
+return false;
+});
+/* Test Data
+$("#emailInput").val("me@me.com");
+$("#fname").val("Jerry");
+$("#lname").val("Padgett");
+$("#dob").val("1919-03-03"); */
+
+function callServer(action, value, value2, last, first) {
+    var data = {
+        'action' : action,
+        'value' : value,
+        'dob' : $("#dob").val(),
+        'last' : $("#lname").val(),
+        'first' : $("#fname").val(),
+        'email' : $("#emailInput").val()
+    }
+    if (action == 'do_signup') {
+        data = {
+            'action': action,
+            'pid': value
+        };
+    }
+    else if (action == 'notify_admin') {
+        data = {
+            'action': action,
+            'pid': value,
+            'provider': value2
+        };
+    }
+    else if (action == 'cleanup') {
+        data = {
+            'action': action
+        }
+    };
+    $.ajax({
+        type : 'GET',
+        url : './account/account.php',
+        data : data
+    }).done(function (rtn) {
+        if (action == "cleanup") {
+            window.location.href = "./index.php" // Goto landing page.
+        }
+        else if (action == "is_new") {
+            if (parseInt(rtn) > 0) {
+                var yes = confirm('Account is validated. Send new credentials?');
+                if(!yes)
+                    callServer('cleanup');
+                else
+                    callServer('do_signup', parseInt(rtn));
+            }
+            else {
+                // After error alert app exit to landing page.
+                var message = "Unable to find your records. Be sure to use your correct Dob, First and Last name and Email of record. If you have opted out of email with none on file then leave blank.";
+                eModal.alert(message);
+            }
+        }
+        else if (action == 'do_signup') {
+            if (rtn == "") {
+                var message = "Unable to either create credentials or send email.";
+                alert(message);
+                return false;
+            }
+            //alert(rtn); // sync alert.. rtn holds username and password for testing.
+            var message = "Your new credentials have been sent. Check your email inbox and also possibly your spam folder. Once you log into your patient portal feel free to make an appointment or send us a secure message. We look forward to seeing you soon."
+            eModal.alert(message); // This is an async call. The modal close event exits us to portal landing page after cleanup.
+        }
+    }).fail(function (err) {
+        var message = "Something went wrong.";
+        alert(message);
+    });
+}
+</script>
+
+
+<div id="gritter-notice-wrapper"><div id="gritter-item-1" class="gritter-item-wrapper my-nonsticky-class" style="" role="alert"><div class="gritter-top"></div><div class="gritter-item"><a class="gritter-close" href="#" tabindex="1">Close Notification</a><div class="gritter-without-image"><span class="gritter-title"><span class="red">Oops!</span></span><p>Something went wrong. Please try again.</p></div><div style="clear:both"></div></div><div class="gritter-bottom"></div></div></div></body></html>
+
+ERROR ERROR ERROR ERROR  LOGIN FAILED TO COMPLETE, didn't find expected message ERROR ERROR ERROR 
