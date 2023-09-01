@@ -1,0 +1,17 @@
+ProxyCommand connect -S socks.cse.cuhk.edu.hk:1080 -a none %h %p
+
+Host github.com
+  User git
+  Port 22
+  Hostname github.com
+  # 注意修改路径为你的路径
+  IdentityFile "/home/clwang23/.ssh/id_rsa"
+  TCPKeepAlive yes
+
+Host ssh.github.com
+  User git
+  Port 443
+  Hostname ssh.github.com
+  # 注意修改路径为你的路径
+  IdentityFile "/home/clwang23/.ssh/id_rsa"
+  TCPKeepAlive yes
