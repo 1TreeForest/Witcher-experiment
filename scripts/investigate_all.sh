@@ -9,7 +9,7 @@ do
 	DDD=$(dirname "$f")
 	echo "##############################  $DDD   ####################";
 	cd $DDD
-	investigate.sh
+	/p/Witcher-experiment/scripts/investigate.sh
 	cd -
 	echo; 
 	echo; 

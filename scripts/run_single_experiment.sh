@@ -292,19 +292,19 @@ if [[ ${DO_BURP} = true ]]; then
 fi
 
 # get IP of container into witcher_config.json
-if sed -r 's/(^.*url.*http:\/\/)[0-9\.]+(.*)/\1'"$ipaddr"'\2/' witcher_config.json > /tmp/tmpcfg.json; then
+if sed -r 's/(^.*url.*http:\/\/)[0-9\.]+(.*)/\1'"$ipaddr"'\2/' witcher_config.json > tmpcfg.json; then
     printf "[\033[32mWitcher\033[0m] Fixed witcher_config.json \n"
 else
     printf "[\033[31mWitcher\033[0m] Failed to fix witcher_config.json \n"
     exit 10
 fi
 
-cp /tmp/tmpcfg.json witcher_config.json
+cp tmpcfg.json witcher_config.json
 
 if [[ -f request_data.json ]]; then
-    if sed  -r "s/(http:\/\/)[0-9\.]+(.*)/\1${ipaddr}\2/" request_data.json > /tmp/tmp_rd.json; then
+    if sed  -r "s/(http:\/\/)[0-9\.]+(.*)/\1${ipaddr}\2/" request_data.json > tmp_rd.json; then
 	  printf "[\033[32mWitcher\033[0m] Fixed witcher_config.json \n"
-	  jq . /tmp/tmp_rd.json > request_data.json
+	  jq . tmp_rd.json > request_data.json
     else
 	  printf "[\033[31mWitcher\033[0m] Failed to fix witcher_config.json \n"
 	  exit 10
@@ -319,14 +319,14 @@ if [[ ${DO_CRAWL} = true ]]; then
     while [[ $diff -lt $DURATION_SEC ]]; do
         #timeout --signal KILL $(( $DURATION_SEC - $diff ))s  execute request_crawler http://$ipaddr$base_url_path "$(pwd)" &
         #--no-headless
-        docker exec -it -w /helpers/request_crawler/  ${docker_container_name} touch /tmp/start_test.dat
+        docker exec -it -w /helpers/request_crawler/  ${docker_container_name} touch start_test.dat
         echo docker exec -it -w /helpers/request_crawler/ -u wc  ${docker_container_name} bash -i -c '"'timeout --signal KILL $(( $DURATION_SEC - $diff ))s  node main.js request_crawler http://localhost$base_url_path $(pwd) >> ${app_role_dpath}/crawler.log '"'
         set -x
         echo
         docker exec -it -w /helpers/request_crawler/  -u wc ${docker_container_name} bash -i -c "timeout --signal KILL $(( $DURATION_SEC - $diff ))s  node main.js request_crawler http://localhost$base_url_path $(pwd) >> ${app_role_dpath}/crawler.log "
         set +x
         exit 99
-        docker exec -it -w /helpers/request_crawler/  ${docker_container_name} rm /tmp/coverages/execs.json
+        docker exec -it -w /helpers/request_crawler/  ${docker_container_name} rm coverages/execs.json
 
 #        pid=$!
 #        echo $pid >> /tmp/witcher_exp_to.pid

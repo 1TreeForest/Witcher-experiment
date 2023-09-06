@@ -1,0 +1,594 @@
+2023-09-03 01:16:18,357 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-09-03 01:16:18,363 INFO RPC interface 'supervisor' initialized
+2023-09-03 01:16:18,363 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2023-09-03 01:16:18,363 INFO supervisord started with pid 1
+2023-09-03 01:16:19,365 INFO spawned: 'apache2' with pid 76
+2023-09-03 01:16:19,367 INFO spawned: 'codecov_conversion' with pid 77
+2023-09-03 01:16:19,368 INFO spawned: 'mysql' with pid 78
+2023-09-03 01:16:20,370 INFO success: apache2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:16:20,370 INFO success: codecov_conversion entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:16:20,370 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:17:42,189 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-09-03 01:17:42,194 INFO RPC interface 'supervisor' initialized
+2023-09-03 01:17:42,194 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2023-09-03 01:17:42,194 INFO supervisord started with pid 1
+2023-09-03 01:17:43,196 INFO spawned: 'apache2' with pid 76
+2023-09-03 01:17:43,198 INFO spawned: 'codecov_conversion' with pid 77
+2023-09-03 01:17:43,199 INFO spawned: 'mysql' with pid 78
+2023-09-03 01:17:44,201 INFO success: apache2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:17:44,201 INFO success: codecov_conversion entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:17:44,201 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:20:59,155 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-09-03 01:20:59,161 INFO RPC interface 'supervisor' initialized
+2023-09-03 01:20:59,161 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2023-09-03 01:20:59,161 INFO supervisord started with pid 1
+2023-09-03 01:21:00,163 INFO spawned: 'apache2' with pid 64
+2023-09-03 01:21:00,165 INFO spawned: 'codecov_conversion' with pid 65
+2023-09-03 01:21:00,167 INFO spawned: 'mysql' with pid 66
+2023-09-03 01:21:01,168 INFO success: apache2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:21:01,168 INFO success: codecov_conversion entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:21:01,168 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:40:54,309 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-09-03 01:40:54,314 INFO RPC interface 'supervisor' initialized
+2023-09-03 01:40:54,314 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2023-09-03 01:40:54,314 INFO supervisord started with pid 1
+2023-09-03 01:40:55,317 INFO spawned: 'apache2' with pid 64
+2023-09-03 01:40:55,318 INFO spawned: 'codecov_conversion' with pid 65
+2023-09-03 01:40:55,320 INFO spawned: 'mysql' with pid 66
+2023-09-03 01:40:56,321 INFO success: apache2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:40:56,321 INFO success: codecov_conversion entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:40:56,321 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:41:56,899 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-09-03 01:41:56,904 INFO RPC interface 'supervisor' initialized
+2023-09-03 01:41:56,904 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2023-09-03 01:41:56,905 INFO supervisord started with pid 1
+2023-09-03 01:41:57,907 INFO spawned: 'apache2' with pid 26
+2023-09-03 01:41:57,908 INFO spawned: 'codecov_conversion' with pid 27
+2023-09-03 01:41:57,910 INFO spawned: 'mysql' with pid 28
+2023-09-03 01:41:58,911 INFO success: apache2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:41:58,912 INFO success: codecov_conversion entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:41:58,912 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:42:48,338 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-09-03 01:42:48,345 INFO RPC interface 'supervisor' initialized
+2023-09-03 01:42:48,345 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2023-09-03 01:42:48,345 INFO supervisord started with pid 1
+2023-09-03 01:42:49,347 INFO spawned: 'apache2' with pid 26
+2023-09-03 01:42:49,348 INFO spawned: 'codecov_conversion' with pid 27
+2023-09-03 01:42:49,350 INFO spawned: 'mysql' with pid 28
+2023-09-03 01:42:50,351 INFO success: apache2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:42:50,351 INFO success: codecov_conversion entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:42:50,351 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:43:13,616 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-09-03 01:43:13,621 INFO RPC interface 'supervisor' initialized
+2023-09-03 01:43:13,621 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2023-09-03 01:43:13,621 INFO supervisord started with pid 1
+2023-09-03 01:43:14,623 INFO spawned: 'apache2' with pid 64
+2023-09-03 01:43:14,625 INFO spawned: 'codecov_conversion' with pid 65
+2023-09-03 01:43:14,627 INFO spawned: 'mysql' with pid 66
+2023-09-03 01:43:15,628 INFO success: apache2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:43:15,628 INFO success: codecov_conversion entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:43:15,628 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:43:46,934 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-09-03 01:43:46,939 INFO RPC interface 'supervisor' initialized
+2023-09-03 01:43:46,939 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2023-09-03 01:43:46,940 INFO supervisord started with pid 1
+2023-09-03 01:43:47,942 INFO spawned: 'apache2' with pid 20
+2023-09-03 01:43:47,944 INFO spawned: 'codecov_conversion' with pid 21
+2023-09-03 01:43:47,945 INFO spawned: 'mysql' with pid 22
+2023-09-03 01:43:48,947 INFO success: apache2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:43:48,947 INFO success: codecov_conversion entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:43:48,947 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:46:41,549 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-09-03 01:46:41,554 INFO RPC interface 'supervisor' initialized
+2023-09-03 01:46:41,554 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2023-09-03 01:46:41,555 INFO supervisord started with pid 1
+2023-09-03 01:46:42,557 INFO spawned: 'apache2' with pid 64
+2023-09-03 01:46:42,559 INFO spawned: 'codecov_conversion' with pid 65
+2023-09-03 01:46:42,560 INFO spawned: 'mysql' with pid 66
+2023-09-03 01:46:43,562 INFO success: apache2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:46:43,562 INFO success: codecov_conversion entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:46:43,562 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:49:25,075 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-09-03 01:49:25,080 INFO RPC interface 'supervisor' initialized
+2023-09-03 01:49:25,080 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2023-09-03 01:49:25,080 INFO supervisord started with pid 1
+2023-09-03 01:49:26,082 INFO spawned: 'apache2' with pid 64
+2023-09-03 01:49:26,084 INFO spawned: 'codecov_conversion' with pid 65
+2023-09-03 01:49:26,086 INFO spawned: 'mysql' with pid 66
+2023-09-03 01:49:27,087 INFO success: apache2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:49:27,087 INFO success: codecov_conversion entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:49:27,087 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:50:25,189 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-09-03 01:50:25,194 INFO RPC interface 'supervisor' initialized
+2023-09-03 01:50:25,195 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2023-09-03 01:50:25,195 INFO supervisord started with pid 1
+2023-09-03 01:50:26,197 INFO spawned: 'apache2' with pid 64
+2023-09-03 01:50:26,199 INFO spawned: 'codecov_conversion' with pid 65
+2023-09-03 01:50:26,200 INFO spawned: 'mysql' with pid 66
+2023-09-03 01:50:27,202 INFO success: apache2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:50:27,202 INFO success: codecov_conversion entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:50:27,202 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:51:35,412 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-09-03 01:51:35,417 INFO RPC interface 'supervisor' initialized
+2023-09-03 01:51:35,417 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2023-09-03 01:51:35,417 INFO supervisord started with pid 1
+2023-09-03 01:51:36,419 INFO spawned: 'apache2' with pid 64
+2023-09-03 01:51:36,420 INFO spawned: 'codecov_conversion' with pid 65
+2023-09-03 01:51:36,422 INFO spawned: 'mysql' with pid 66
+2023-09-03 01:51:37,423 INFO success: apache2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:51:37,423 INFO success: codecov_conversion entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:51:37,423 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:53:15,429 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-09-03 01:53:15,434 INFO RPC interface 'supervisor' initialized
+2023-09-03 01:53:15,434 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2023-09-03 01:53:15,435 INFO supervisord started with pid 1
+2023-09-03 01:53:16,437 INFO spawned: 'apache2' with pid 71
+2023-09-03 01:53:16,439 INFO spawned: 'codecov_conversion' with pid 72
+2023-09-03 01:53:16,440 INFO spawned: 'mysql' with pid 73
+2023-09-03 01:53:17,442 INFO success: apache2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:53:17,442 INFO success: codecov_conversion entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:53:17,442 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:53:45,626 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-09-03 01:53:45,631 INFO RPC interface 'supervisor' initialized
+2023-09-03 01:53:45,631 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2023-09-03 01:53:45,631 INFO supervisord started with pid 1
+2023-09-03 01:53:46,633 INFO spawned: 'apache2' with pid 64
+2023-09-03 01:53:46,635 INFO spawned: 'codecov_conversion' with pid 65
+2023-09-03 01:53:46,636 INFO spawned: 'mysql' with pid 66
+2023-09-03 01:53:47,638 INFO success: apache2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:53:47,638 INFO success: codecov_conversion entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:53:47,638 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:54:42,454 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-09-03 01:54:42,459 INFO RPC interface 'supervisor' initialized
+2023-09-03 01:54:42,460 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2023-09-03 01:54:42,460 INFO supervisord started with pid 1
+2023-09-03 01:54:43,462 INFO spawned: 'apache2' with pid 64
+2023-09-03 01:54:43,464 INFO spawned: 'codecov_conversion' with pid 65
+2023-09-03 01:54:43,466 INFO spawned: 'mysql' with pid 67
+2023-09-03 01:54:44,468 INFO success: apache2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:54:44,468 INFO success: codecov_conversion entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:54:44,468 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 01:55:26,513 INFO reaped unknown pid 581 (exit status 0)
+2023-09-03 02:00:30,832 INFO reaped unknown pid 588 (terminated by SIGKILL)
+2023-09-03 02:00:30,833 INFO reaped unknown pid 36486 (exit status 0)
+2023-09-03 02:00:30,833 INFO reaped unknown pid 587 (exit status 0)
+2023-09-03 02:00:33,836 INFO reaped unknown pid 36488 (exit status 0)
+2023-09-03 02:13:22,637 INFO reaped unknown pid 36523 (terminated by SIGKILL)
+2023-09-03 02:13:22,637 INFO reaped unknown pid 121907 (exit status 255)
+2023-09-03 02:13:59,358 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-09-03 02:13:59,363 INFO RPC interface 'supervisor' initialized
+2023-09-03 02:13:59,363 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2023-09-03 02:13:59,363 INFO supervisord started with pid 1
+2023-09-03 02:14:00,365 INFO spawned: 'apache2' with pid 64
+2023-09-03 02:14:00,367 INFO spawned: 'codecov_conversion' with pid 65
+2023-09-03 02:14:00,368 INFO spawned: 'mysql' with pid 66
+2023-09-03 02:14:01,370 INFO success: apache2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 02:14:01,370 INFO success: codecov_conversion entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 02:14:01,370 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 02:14:58,663 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-09-03 02:14:58,668 INFO RPC interface 'supervisor' initialized
+2023-09-03 02:14:58,668 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2023-09-03 02:14:58,668 INFO supervisord started with pid 1
+2023-09-03 02:14:59,670 INFO spawned: 'apache2' with pid 64
+2023-09-03 02:14:59,672 INFO spawned: 'codecov_conversion' with pid 65
+2023-09-03 02:14:59,674 INFO spawned: 'mysql' with pid 66
+2023-09-03 02:15:00,675 INFO success: apache2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 02:15:00,675 INFO success: codecov_conversion entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 02:15:00,675 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 02:17:59,106 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-09-03 02:17:59,111 INFO RPC interface 'supervisor' initialized
+2023-09-03 02:17:59,111 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2023-09-03 02:17:59,112 INFO supervisord started with pid 1
+2023-09-03 02:18:00,114 INFO spawned: 'apache2' with pid 64
+2023-09-03 02:18:00,115 INFO spawned: 'codecov_conversion' with pid 65
+2023-09-03 02:18:00,117 INFO spawned: 'mysql' with pid 66
+2023-09-03 02:18:01,119 INFO success: apache2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 02:18:01,119 INFO success: codecov_conversion entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 02:18:01,119 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 02:18:52,075 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-09-03 02:18:52,080 INFO RPC interface 'supervisor' initialized
+2023-09-03 02:18:52,080 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2023-09-03 02:18:52,080 INFO supervisord started with pid 1
+2023-09-03 02:18:53,083 INFO spawned: 'apache2' with pid 64
+2023-09-03 02:18:53,084 INFO spawned: 'codecov_conversion' with pid 65
+2023-09-03 02:18:53,086 INFO spawned: 'mysql' with pid 66
+2023-09-03 02:18:54,087 INFO success: apache2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 02:18:54,088 INFO success: codecov_conversion entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 02:18:54,088 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 02:19:41,139 INFO reaped unknown pid 581 (exit status 0)
+2023-09-03 02:28:26,740 INFO reaped unknown pid 599 (terminated by SIGKILL)
+2023-09-03 02:28:26,740 INFO reaped unknown pid 655 (terminated by SIGKILL)
+2023-09-03 02:28:26,741 INFO reaped unknown pid 576100 (exit status 0)
+2023-09-03 02:28:26,741 INFO reaped unknown pid 636 (terminated by SIGKILL)
+2023-09-03 02:28:26,741 INFO reaped unknown pid 576105 (exit status 0)
+2023-09-03 02:28:26,741 INFO reaped unknown pid 759 (terminated by SIGKILL)
+2023-09-03 02:28:26,741 INFO reaped unknown pid 702 (terminated by SIGKILL)
+2023-09-03 02:28:26,741 INFO reaped unknown pid 576107 (exit status 0)
+2023-09-03 02:28:26,741 INFO reaped unknown pid 592 (terminated by SIGKILL)
+2023-09-03 02:28:26,741 INFO reaped unknown pid 576102 (exit status 0)
+2023-09-03 02:28:26,741 INFO reaped unknown pid 596 (exit status 0)
+2023-09-03 02:28:26,741 INFO reaped unknown pid 604 (exit status 0)
+2023-09-03 02:28:26,741 INFO reaped unknown pid 676 (terminated by SIGKILL)
+2023-09-03 02:28:26,741 INFO reaped unknown pid 576099 (exit status 0)
+2023-09-03 02:28:26,741 INFO reaped unknown pid 693 (exit status 0)
+2023-09-03 02:28:26,741 INFO reaped unknown pid 732 (terminated by SIGKILL)
+2023-09-03 02:28:26,741 INFO reaped unknown pid 620 (terminated by SIGKILL)
+2023-09-03 02:28:26,741 INFO reaped unknown pid 576101 (exit status 0)
+2023-09-03 02:28:26,741 INFO reaped unknown pid 609 (terminated by SIGKILL)
+2023-09-03 02:28:26,741 INFO reaped unknown pid 576106 (exit status 0)
+2023-09-03 02:28:26,741 INFO reaped unknown pid 576104 (exit status 0)
+2023-09-03 02:28:26,741 INFO reaped unknown pid 576103 (exit status 0)
+2023-09-03 02:28:26,741 INFO reaped unknown pid 576108 (exit status 0)
+2023-09-03 02:28:29,744 INFO reaped unknown pid 576116 (exit status 0)
+2023-09-03 02:30:45,614 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-09-03 02:30:45,619 INFO RPC interface 'supervisor' initialized
+2023-09-03 02:30:45,619 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2023-09-03 02:30:45,619 INFO supervisord started with pid 1
+2023-09-03 02:30:46,621 INFO spawned: 'apache2' with pid 64
+2023-09-03 02:30:46,623 INFO spawned: 'codecov_conversion' with pid 65
+2023-09-03 02:30:46,624 INFO spawned: 'mysql' with pid 66
+2023-09-03 02:30:47,626 INFO success: apache2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 02:30:47,626 INFO success: codecov_conversion entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 02:30:47,626 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-03 02:31:54,696 INFO reaped unknown pid 581 (exit status 0)
+2023-09-03 03:31:58,120 INFO reaped unknown pid 2880696 (exit status 0)
+2023-09-03 03:32:13,135 INFO reaped unknown pid 587 (exit status 1)
+2023-09-03 03:32:13,135 INFO reaped unknown pid 591 (exit status 1)
+2023-09-03 03:32:13,135 INFO reaped unknown pid 596 (exit status 1)
+2023-09-03 03:32:13,135 INFO reaped unknown pid 615 (exit status 1)
+2023-09-03 03:32:13,135 INFO reaped unknown pid 646 (exit status 1)
+2023-09-03 03:32:13,135 INFO reaped unknown pid 664 (exit status 1)
+2023-09-03 03:32:13,135 INFO reaped unknown pid 682 (exit status 1)
+2023-09-03 03:32:13,135 INFO reaped unknown pid 2892840 (exit status 0)
+2023-09-03 03:32:13,135 INFO reaped unknown pid 675 (exit status 2)
+2023-09-03 03:32:13,135 INFO reaped unknown pid 592 (exit status 2)
+2023-09-03 03:32:13,135 INFO reaped unknown pid 608 (exit status 2)
+2023-09-03 03:32:13,135 INFO reaped unknown pid 691 (exit status 2)
+2023-09-03 03:32:13,135 INFO reaped unknown pid 636 (exit status 2)
+2023-09-03 03:32:13,135 INFO reaped unknown pid 598 (exit status 2)
+2023-09-03 03:32:13,135 INFO reaped unknown pid 728 (exit status 2)
+2023-09-03 03:32:14,137 INFO reaped unknown pid 630 (exit status 1)
+2023-09-03 03:32:14,137 INFO reaped unknown pid 654 (exit status 2)
+2023-09-03 03:32:17,140 INFO reaped unknown pid 605 (exit status 1)
+2023-09-03 03:32:17,140 INFO reaped unknown pid 622 (exit status 2)
+2023-09-03 03:32:19,143 INFO reaped unknown pid 710 (exit status 1)
+2023-09-03 03:32:19,143 INFO reaped unknown pid 743 (exit status 2)
+2023-09-03 04:32:16,313 INFO reaped unknown pid 2682084 (exit status 0)
+2023-09-03 04:32:31,329 INFO reaped unknown pid 2892897 (exit status 1)
+2023-09-03 04:32:31,330 INFO reaped unknown pid 2893015 (exit status 1)
+2023-09-03 04:32:31,330 INFO reaped unknown pid 2893105 (exit status 1)
+2023-09-03 04:32:31,330 INFO reaped unknown pid 2893123 (exit status 1)
+2023-09-03 04:32:31,330 INFO reaped unknown pid 2893173 (exit status 1)
+2023-09-03 04:32:31,330 INFO reaped unknown pid 2893191 (exit status 1)
+2023-09-03 04:32:31,330 INFO reaped unknown pid 2893211 (exit status 1)
+2023-09-03 04:32:31,330 INFO reaped unknown pid 2893235 (exit status 1)
+2023-09-03 04:32:31,330 INFO reaped unknown pid 2893256 (exit status 1)
+2023-09-03 04:32:31,330 INFO reaped unknown pid 2699063 (exit status 0)
+2023-09-03 04:32:31,330 INFO reaped unknown pid 2893220 (exit status 2)
+2023-09-03 04:32:31,330 INFO reaped unknown pid 2893128 (exit status 2)
+2023-09-03 04:32:31,330 INFO reaped unknown pid 2893243 (exit status 2)
+2023-09-03 04:32:31,330 INFO reaped unknown pid 2892935 (exit status 2)
+2023-09-03 04:32:31,330 INFO reaped unknown pid 2893057 (exit status 2)
+2023-09-03 04:32:31,330 INFO reaped unknown pid 2893280 (exit status 2)
+2023-09-03 04:32:31,330 INFO reaped unknown pid 2893290 (exit status 2)
+2023-09-03 04:32:31,330 INFO reaped unknown pid 2893155 (exit status 2)
+2023-09-03 04:32:31,330 INFO reaped unknown pid 2893227 (exit status 2)
+2023-09-03 04:32:34,334 INFO reaped unknown pid 2893147 (exit status 1)
+2023-09-03 04:32:34,334 INFO reaped unknown pid 2893176 (exit status 2)
+2023-09-03 05:32:34,424 INFO reaped unknown pid 1285358 (exit status 0)
+2023-09-03 05:32:49,441 INFO reaped unknown pid 2699281 (exit status 1)
+2023-09-03 05:32:49,441 INFO reaped unknown pid 2699297 (exit status 1)
+2023-09-03 05:32:49,441 INFO reaped unknown pid 2699407 (exit status 1)
+2023-09-03 05:32:49,441 INFO reaped unknown pid 1295105 (exit status 0)
+2023-09-03 05:32:49,441 INFO reaped unknown pid 2699305 (exit status 2)
+2023-09-03 05:32:49,441 INFO reaped unknown pid 2699433 (exit status 2)
+2023-09-03 05:32:49,441 INFO reaped unknown pid 2699313 (exit status 2)
+2023-09-03 05:32:52,445 INFO reaped unknown pid 2699516 (exit status 1)
+2023-09-03 05:32:52,445 INFO reaped unknown pid 2699545 (exit status 2)
+2023-09-03 05:32:53,447 INFO reaped unknown pid 2699229 (exit status 1)
+2023-09-03 05:32:53,447 INFO reaped unknown pid 2699243 (exit status 2)
+2023-09-03 05:32:54,448 INFO reaped unknown pid 2699189 (exit status 1)
+2023-09-03 05:32:54,448 INFO reaped unknown pid 2699454 (exit status 1)
+2023-09-03 05:32:54,448 INFO reaped unknown pid 2699204 (exit status 2)
+2023-09-03 05:32:54,448 INFO reaped unknown pid 2699484 (exit status 2)
+2023-09-03 05:32:55,449 INFO reaped unknown pid 2699131 (exit status 1)
+2023-09-03 05:32:55,450 INFO reaped unknown pid 2699210 (exit status 1)
+2023-09-03 05:32:55,450 INFO reaped unknown pid 2699601 (exit status 1)
+2023-09-03 05:32:55,450 INFO reaped unknown pid 2699226 (exit status 2)
+2023-09-03 05:32:55,450 INFO reaped unknown pid 2699182 (exit status 2)
+2023-09-03 05:32:55,450 INFO reaped unknown pid 2699637 (exit status 2)
+2023-09-03 06:32:52,791 INFO reaped unknown pid 1060278 (exit status 0)
+2023-09-03 06:33:07,805 INFO reaped unknown pid 1295359 (exit status 1)
+2023-09-03 06:33:07,805 INFO reaped unknown pid 1076568 (exit status 0)
+2023-09-03 06:33:07,805 INFO reaped unknown pid 1295393 (exit status 2)
+2023-09-03 06:33:08,806 INFO reaped unknown pid 1295138 (exit status 1)
+2023-09-03 06:33:08,807 INFO reaped unknown pid 1295232 (exit status 1)
+2023-09-03 06:33:08,807 INFO reaped unknown pid 1295266 (exit status 1)
+2023-09-03 06:33:08,807 INFO reaped unknown pid 1295283 (exit status 1)
+2023-09-03 06:33:08,807 INFO reaped unknown pid 1295337 (exit status 1)
+2023-09-03 06:33:08,807 INFO reaped unknown pid 1295381 (exit status 1)
+2023-09-03 06:33:08,807 INFO reaped unknown pid 1295408 (exit status 1)
+2023-09-03 06:33:08,807 INFO reaped unknown pid 1295304 (exit status 2)
+2023-09-03 06:33:08,807 INFO reaped unknown pid 1295452 (exit status 2)
+2023-09-03 06:33:08,807 INFO reaped unknown pid 1295242 (exit status 2)
+2023-09-03 06:33:08,807 INFO reaped unknown pid 1295163 (exit status 2)
+2023-09-03 06:33:08,807 INFO reaped unknown pid 1295369 (exit status 2)
+2023-09-03 06:33:08,807 INFO reaped unknown pid 1295441 (exit status 2)
+2023-09-03 06:33:08,807 INFO reaped unknown pid 1295279 (exit status 2)
+2023-09-03 06:33:11,810 INFO reaped unknown pid 1295317 (exit status 1)
+2023-09-03 06:33:11,810 INFO reaped unknown pid 1295344 (exit status 2)
+2023-09-03 06:33:12,811 INFO reaped unknown pid 1295303 (exit status 1)
+2023-09-03 06:33:12,812 INFO reaped unknown pid 1295328 (exit status 2)
+2023-09-03 07:33:10,935 INFO reaped unknown pid 3888451 (exit status 0)
+2023-09-03 07:33:25,952 INFO reaped unknown pid 1076886 (exit status 1)
+2023-09-03 07:33:25,952 INFO reaped unknown pid 1076924 (exit status 1)
+2023-09-03 07:33:25,952 INFO reaped unknown pid 1077109 (exit status 1)
+2023-09-03 07:33:25,952 INFO reaped unknown pid 3898843 (exit status 0)
+2023-09-03 07:33:25,952 INFO reaped unknown pid 1076925 (exit status 2)
+2023-09-03 07:33:25,952 INFO reaped unknown pid 1076966 (exit status 2)
+2023-09-03 07:33:25,952 INFO reaped unknown pid 1077143 (exit status 2)
+2023-09-03 07:33:26,954 INFO reaped unknown pid 1076645 (exit status 1)
+2023-09-03 07:33:26,954 INFO reaped unknown pid 1076702 (exit status 2)
+2023-09-03 07:33:27,955 INFO reaped unknown pid 1076688 (exit status 1)
+2023-09-03 07:33:27,955 INFO reaped unknown pid 1076734 (exit status 2)
+2023-09-03 07:33:28,956 INFO reaped unknown pid 1076710 (exit status 1)
+2023-09-03 07:33:28,956 INFO reaped unknown pid 1076946 (exit status 1)
+2023-09-03 07:33:28,957 INFO reaped unknown pid 1077033 (exit status 1)
+2023-09-03 07:33:28,957 INFO reaped unknown pid 1076746 (exit status 2)
+2023-09-03 07:33:28,957 INFO reaped unknown pid 1076972 (exit status 2)
+2023-09-03 07:33:28,957 INFO reaped unknown pid 1077066 (exit status 2)
+2023-09-03 07:33:31,960 INFO reaped unknown pid 1076838 (exit status 1)
+2023-09-03 07:33:31,960 INFO reaped unknown pid 1076859 (exit status 2)
+2023-09-03 07:33:34,963 INFO reaped unknown pid 1076986 (exit status 1)
+2023-09-03 07:33:34,963 INFO reaped unknown pid 1077016 (exit status 2)
+2023-09-03 08:33:29,420 INFO reaped unknown pid 3685172 (exit status 0)
+2023-09-03 08:33:44,438 INFO reaped unknown pid 3898886 (exit status 1)
+2023-09-03 08:33:44,438 INFO reaped unknown pid 3898899 (exit status 1)
+2023-09-03 08:33:44,438 INFO reaped unknown pid 3898907 (exit status 1)
+2023-09-03 08:33:44,438 INFO reaped unknown pid 3898917 (exit status 1)
+2023-09-03 08:33:44,438 INFO reaped unknown pid 3898930 (exit status 1)
+2023-09-03 08:33:44,438 INFO reaped unknown pid 3898944 (exit status 1)
+2023-09-03 08:33:44,438 INFO reaped unknown pid 3898962 (exit status 1)
+2023-09-03 08:33:44,438 INFO reaped unknown pid 3898982 (exit status 1)
+2023-09-03 08:33:44,438 INFO reaped unknown pid 3899002 (exit status 1)
+2023-09-03 08:33:44,438 INFO reaped unknown pid 3701641 (exit status 0)
+2023-09-03 08:33:44,438 INFO reaped unknown pid 3898990 (exit status 2)
+2023-09-03 08:33:44,438 INFO reaped unknown pid 3898909 (exit status 2)
+2023-09-03 08:33:44,439 INFO reaped unknown pid 3898929 (exit status 2)
+2023-09-03 08:33:44,439 INFO reaped unknown pid 3898920 (exit status 2)
+2023-09-03 08:33:44,439 INFO reaped unknown pid 3899023 (exit status 2)
+2023-09-03 08:33:44,439 INFO reaped unknown pid 3899034 (exit status 2)
+2023-09-03 08:33:44,439 INFO reaped unknown pid 3898950 (exit status 2)
+2023-09-03 08:33:44,439 INFO reaped unknown pid 3898934 (exit status 2)
+2023-09-03 08:33:44,439 INFO reaped unknown pid 3898968 (exit status 2)
+2023-09-03 08:33:46,441 INFO reaped unknown pid 3899026 (exit status 1)
+2023-09-03 08:33:46,441 INFO reaped unknown pid 3899060 (exit status 2)
+2023-09-03 09:33:46,706 INFO reaped unknown pid 2399919 (exit status 0)
+2023-09-03 09:34:01,725 INFO reaped unknown pid 3701871 (exit status 1)
+2023-09-03 09:34:01,725 INFO reaped unknown pid 3701897 (exit status 1)
+2023-09-03 09:34:01,725 INFO reaped unknown pid 2412524 (exit status 0)
+2023-09-03 09:34:01,725 INFO reaped unknown pid 3701933 (exit status 2)
+2023-09-03 09:34:01,725 INFO reaped unknown pid 3701905 (exit status 2)
+2023-09-03 09:34:03,727 INFO reaped unknown pid 3701815 (exit status 1)
+2023-09-03 09:34:03,727 INFO reaped unknown pid 3701855 (exit status 2)
+2023-09-03 09:34:04,729 INFO reaped unknown pid 3701851 (exit status 1)
+2023-09-03 09:34:04,729 INFO reaped unknown pid 3701879 (exit status 2)
+2023-09-03 09:34:06,731 INFO reaped unknown pid 3701835 (exit status 1)
+2023-09-03 09:34:06,731 INFO reaped unknown pid 3701918 (exit status 1)
+2023-09-03 09:34:06,731 INFO reaped unknown pid 3701984 (exit status 2)
+2023-09-03 09:34:06,731 INFO reaped unknown pid 3701885 (exit status 2)
+2023-09-03 09:34:07,733 INFO reaped unknown pid 3701796 (exit status 1)
+2023-09-03 09:34:07,733 INFO reaped unknown pid 3701840 (exit status 2)
+2023-09-03 09:34:09,735 INFO reaped unknown pid 3701718 (exit status 1)
+2023-09-03 09:34:09,736 INFO reaped unknown pid 3701786 (exit status 2)
+2023-09-03 09:34:10,737 INFO reaped unknown pid 3701771 (exit status 1)
+2023-09-03 09:34:10,737 INFO reaped unknown pid 3701826 (exit status 2)
+2023-09-03 10:34:04,294 INFO reaped unknown pid 2297425 (exit status 0)
+2023-09-03 10:34:22,313 INFO reaped unknown pid 3701752 (exit status 1)
+2023-09-03 10:34:22,314 INFO reaped unknown pid 2412559 (exit status 1)
+2023-09-03 10:34:22,314 INFO reaped unknown pid 2412574 (exit status 1)
+2023-09-03 10:34:22,314 INFO reaped unknown pid 2412585 (exit status 1)
+2023-09-03 10:34:22,314 INFO reaped unknown pid 2412597 (exit status 1)
+2023-09-03 10:34:22,314 INFO reaped unknown pid 2412625 (exit status 1)
+2023-09-03 10:34:22,314 INFO reaped unknown pid 2412666 (exit status 1)
+2023-09-03 10:34:22,314 INFO reaped unknown pid 2412720 (exit status 1)
+2023-09-03 10:34:22,314 INFO reaped unknown pid 2314717 (exit status 0)
+2023-09-03 10:34:22,314 INFO reaped unknown pid 2412729 (exit status 2)
+2023-09-03 10:34:22,314 INFO reaped unknown pid 2412578 (exit status 2)
+2023-09-03 10:34:22,314 INFO reaped unknown pid 2412655 (exit status 2)
+2023-09-03 10:34:22,314 INFO reaped unknown pid 2412705 (exit status 2)
+2023-09-03 10:34:22,314 INFO reaped unknown pid 3701797 (exit status 2)
+2023-09-03 10:34:22,314 INFO reaped unknown pid 2412615 (exit status 2)
+2023-09-03 10:34:22,314 INFO reaped unknown pid 2412601 (exit status 2)
+2023-09-03 10:34:22,314 INFO reaped unknown pid 2412600 (exit status 2)
+2023-09-03 10:34:23,316 INFO reaped unknown pid 2412644 (exit status 1)
+2023-09-03 10:34:23,316 INFO reaped unknown pid 2412678 (exit status 2)
+2023-09-03 10:34:24,317 INFO reaped unknown pid 2412694 (exit status 1)
+2023-09-03 10:34:24,317 INFO reaped unknown pid 2412733 (exit status 2)
+2023-09-03 10:34:26,320 INFO reaped unknown pid 2412610 (exit status 1)
+2023-09-03 10:34:26,320 INFO reaped unknown pid 2412633 (exit status 2)
+2023-09-03 11:34:24,800 INFO reaped unknown pid 1135352 (exit status 0)
+2023-09-03 11:34:40,819 INFO reaped unknown pid 2316941 (exit status 1)
+2023-09-03 11:34:40,819 INFO reaped unknown pid 2317079 (exit status 1)
+2023-09-03 11:34:40,819 INFO reaped unknown pid 2317114 (exit status 1)
+2023-09-03 11:34:40,819 INFO reaped unknown pid 2317156 (exit status 1)
+2023-09-03 11:34:40,819 INFO reaped unknown pid 1146761 (exit status 0)
+2023-09-03 11:34:40,819 INFO reaped unknown pid 2317134 (exit status 2)
+2023-09-03 11:34:40,819 INFO reaped unknown pid 2317147 (exit status 2)
+2023-09-03 11:34:40,819 INFO reaped unknown pid 2317149 (exit status 2)
+2023-09-03 11:34:40,819 INFO reaped unknown pid 2317191 (exit status 2)
+2023-09-03 11:34:41,820 INFO reaped unknown pid 2317097 (exit status 1)
+2023-09-03 11:34:41,821 INFO reaped unknown pid 2317133 (exit status 2)
+2023-09-03 11:34:42,821 INFO reaped unknown pid 2316974 (exit status 1)
+2023-09-03 11:34:42,822 INFO reaped unknown pid 2316995 (exit status 1)
+2023-09-03 11:34:42,822 INFO reaped unknown pid 2317256 (exit status 1)
+2023-09-03 11:34:42,822 INFO reaped unknown pid 2317132 (exit status 2)
+2023-09-03 11:34:42,822 INFO reaped unknown pid 2317131 (exit status 2)
+2023-09-03 11:34:42,822 INFO reaped unknown pid 2317290 (exit status 2)
+2023-09-03 11:34:43,823 INFO reaped unknown pid 2316913 (exit status 1)
+2023-09-03 11:34:43,823 INFO reaped unknown pid 2317209 (exit status 1)
+2023-09-03 11:34:43,823 INFO reaped unknown pid 2317135 (exit status 2)
+2023-09-03 11:34:43,823 INFO reaped unknown pid 2317244 (exit status 2)
+2023-09-03 12:34:43,025 INFO reaped unknown pid 887682 (exit status 0)
+2023-09-03 12:34:58,042 INFO reaped unknown pid 1146994 (exit status 1)
+2023-09-03 12:34:58,042 INFO reaped unknown pid 1147060 (exit status 1)
+2023-09-03 12:34:58,042 INFO reaped unknown pid 903524 (exit status 0)
+2023-09-03 12:34:59,043 INFO reaped unknown pid 1146940 (exit status 1)
+2023-09-03 12:34:59,043 INFO reaped unknown pid 1146950 (exit status 1)
+2023-09-03 12:34:59,043 INFO reaped unknown pid 1146962 (exit status 1)
+2023-09-03 12:34:59,043 INFO reaped unknown pid 1146975 (exit status 1)
+2023-09-03 12:34:59,043 INFO reaped unknown pid 1147015 (exit status 1)
+2023-09-03 12:34:59,043 INFO reaped unknown pid 1147089 (exit status 1)
+2023-09-03 12:34:59,043 INFO reaped unknown pid 1147102 (exit status 2)
+2023-09-03 12:34:59,044 INFO reaped unknown pid 1147034 (exit status 2)
+2023-09-03 12:34:59,044 INFO reaped unknown pid 1146981 (exit status 2)
+2023-09-03 12:34:59,044 INFO reaped unknown pid 1147002 (exit status 2)
+2023-09-03 12:34:59,044 INFO reaped unknown pid 1146969 (exit status 2)
+2023-09-03 12:34:59,044 INFO reaped unknown pid 1147149 (exit status 2)
+2023-09-03 12:34:59,044 INFO reaped unknown pid 1147047 (exit status 2)
+2023-09-03 12:34:59,044 INFO reaped unknown pid 1146961 (exit status 2)
+2023-09-03 12:35:00,046 INFO reaped unknown pid 1146930 (exit status 1)
+2023-09-03 12:35:00,046 INFO reaped unknown pid 1146960 (exit status 2)
+2023-09-03 12:35:01,047 INFO reaped unknown pid 1147037 (exit status 1)
+2023-09-03 12:35:01,047 INFO reaped unknown pid 1147074 (exit status 2)
+2023-09-03 13:35:00,427 INFO reaped unknown pid 3784282 (exit status 0)
+2023-09-03 13:35:15,443 INFO reaped unknown pid 903961 (exit status 1)
+2023-09-03 13:35:15,443 INFO reaped unknown pid 904017 (exit status 1)
+2023-09-03 13:35:15,443 INFO reaped unknown pid 904076 (exit status 1)
+2023-09-03 13:35:15,443 INFO reaped unknown pid 904193 (exit status 1)
+2023-09-03 13:35:15,443 INFO reaped unknown pid 904255 (exit status 1)
+2023-09-03 13:35:15,443 INFO reaped unknown pid 3797095 (exit status 0)
+2023-09-03 13:35:15,443 INFO reaped unknown pid 904287 (exit status 2)
+2023-09-03 13:35:15,443 INFO reaped unknown pid 904004 (exit status 2)
+2023-09-03 13:35:15,443 INFO reaped unknown pid 904032 (exit status 2)
+2023-09-03 13:35:15,443 INFO reaped unknown pid 904264 (exit status 2)
+2023-09-03 13:35:15,443 INFO reaped unknown pid 904098 (exit status 2)
+2023-09-03 13:35:16,444 INFO reaped unknown pid 903974 (exit status 1)
+2023-09-03 13:35:16,444 INFO reaped unknown pid 904000 (exit status 1)
+2023-09-03 13:35:16,444 INFO reaped unknown pid 904050 (exit status 1)
+2023-09-03 13:35:16,444 INFO reaped unknown pid 904314 (exit status 1)
+2023-09-03 13:35:16,444 INFO reaped unknown pid 904070 (exit status 2)
+2023-09-03 13:35:16,444 INFO reaped unknown pid 904007 (exit status 2)
+2023-09-03 13:35:16,444 INFO reaped unknown pid 904351 (exit status 2)
+2023-09-03 13:35:16,444 INFO reaped unknown pid 904015 (exit status 2)
+2023-09-03 13:35:18,447 INFO reaped unknown pid 904107 (exit status 1)
+2023-09-03 13:35:18,447 INFO reaped unknown pid 904136 (exit status 2)
+2023-09-03 14:35:18,650 INFO reaped unknown pid 2608157 (exit status 0)
+2023-09-03 14:35:33,666 INFO reaped unknown pid 2621326 (exit status 0)
+2023-09-03 14:35:33,667 INFO reaped unknown pid 2621328 (exit status 0)
+2023-09-03 14:35:33,667 INFO reaped unknown pid 2621324 (exit status 0)
+2023-09-03 14:35:33,667 INFO reaped unknown pid 2621327 (exit status 0)
+2023-09-03 14:35:33,667 INFO reaped unknown pid 2621323 (exit status 0)
+2023-09-03 14:35:33,667 INFO reaped unknown pid 2621320 (terminated by SIGKILL)
+2023-09-03 14:35:33,667 INFO reaped unknown pid 2621325 (exit status 0)
+2023-09-03 14:35:34,668 INFO reaped unknown pid 3797278 (exit status 0)
+2023-09-03 14:35:34,669 INFO reaped unknown pid 3797304 (exit status 0)
+2023-09-03 14:35:34,669 INFO reaped unknown pid 3797421 (exit status 0)
+2023-09-03 14:35:34,669 INFO reaped unknown pid 3797455 (exit status 0)
+2023-09-03 14:35:34,669 INFO reaped unknown pid 3797494 (exit status 0)
+2023-09-03 14:35:34,669 INFO reaped unknown pid 3797533 (exit status 0)
+2023-09-03 14:35:34,669 INFO reaped unknown pid 3797606 (exit status 0)
+2023-09-03 14:35:34,669 INFO reaped unknown pid 3797630 (exit status 0)
+2023-09-03 14:35:34,669 INFO reaped unknown pid 3797672 (exit status 0)
+2023-09-03 14:35:34,669 INFO reaped unknown pid 3797757 (exit status 0)
+2023-09-03 14:35:34,669 INFO reaped unknown pid 3797817 (terminated by SIGKILL)
+2023-09-03 14:35:34,669 INFO reaped unknown pid 3797705 (terminated by SIGKILL)
+2023-09-03 14:35:34,669 INFO reaped unknown pid 3797471 (terminated by SIGKILL)
+2023-09-03 14:35:34,669 INFO reaped unknown pid 3797466 (terminated by SIGKILL)
+2023-09-03 14:35:34,669 INFO reaped unknown pid 3797520 (terminated by SIGKILL)
+2023-09-03 14:35:34,669 INFO reaped unknown pid 3797660 (terminated by SIGKILL)
+2023-09-03 14:35:34,669 INFO reaped unknown pid 3797556 (terminated by SIGKILL)
+2023-09-03 14:35:34,669 INFO reaped unknown pid 3797459 (terminated by SIGKILL)
+2023-09-03 14:35:34,669 INFO reaped unknown pid 3797464 (terminated by SIGKILL)
+2023-09-03 14:35:34,669 INFO reaped unknown pid 3797664 (terminated by SIGKILL)
+2023-09-04 04:11:42,518 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-09-04 04:11:42,524 INFO RPC interface 'supervisor' initialized
+2023-09-04 04:11:42,524 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2023-09-04 04:11:42,524 INFO supervisord started with pid 1
+2023-09-04 04:11:43,526 INFO spawned: 'apache2' with pid 64
+2023-09-04 04:11:43,528 INFO spawned: 'codecov_conversion' with pid 65
+2023-09-04 04:11:43,529 INFO spawned: 'mysql' with pid 66
+2023-09-04 04:11:44,531 INFO success: apache2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-04 04:11:44,531 INFO success: codecov_conversion entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-04 04:11:44,531 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-04 04:13:23,266 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-09-04 04:13:23,271 INFO RPC interface 'supervisor' initialized
+2023-09-04 04:13:23,271 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2023-09-04 04:13:23,272 INFO supervisord started with pid 1
+2023-09-04 04:13:24,274 INFO spawned: 'apache2' with pid 64
+2023-09-04 04:13:24,275 INFO spawned: 'codecov_conversion' with pid 65
+2023-09-04 04:13:24,277 INFO spawned: 'mysql' with pid 66
+2023-09-04 04:13:25,278 INFO success: apache2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-04 04:13:25,279 INFO success: codecov_conversion entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-04 04:13:25,279 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-04 04:17:27,826 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-09-04 04:17:27,831 INFO RPC interface 'supervisor' initialized
+2023-09-04 04:17:27,831 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2023-09-04 04:17:27,832 INFO supervisord started with pid 1
+2023-09-04 04:17:28,834 INFO spawned: 'apache2' with pid 64
+2023-09-04 04:17:28,835 INFO spawned: 'codecov_conversion' with pid 65
+2023-09-04 04:17:28,837 INFO spawned: 'mysql' with pid 66
+2023-09-04 04:17:29,838 INFO success: apache2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-04 04:17:29,838 INFO success: codecov_conversion entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-04 04:17:29,838 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-04 04:18:12,885 INFO reaped unknown pid 581 (exit status 0)
+2023-09-04 04:33:08,819 INFO reaped unknown pid 588 (terminated by SIGKILL)
+2023-09-04 04:33:08,819 INFO reaped unknown pid 106718 (exit status 0)
+2023-09-04 04:35:10,179 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-09-04 04:35:10,184 INFO RPC interface 'supervisor' initialized
+2023-09-04 04:35:10,184 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2023-09-04 04:35:10,185 INFO supervisord started with pid 1
+2023-09-04 04:35:11,187 INFO spawned: 'apache2' with pid 63
+2023-09-04 04:35:11,188 INFO spawned: 'codecov_conversion' with pid 64
+2023-09-04 04:35:11,190 INFO spawned: 'mysql' with pid 66
+2023-09-04 04:35:12,191 INFO success: apache2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-04 04:35:12,192 INFO success: codecov_conversion entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-04 04:35:12,192 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-04 04:35:49,233 INFO reaped unknown pid 580 (exit status 0)
+2023-09-04 04:39:32,466 INFO reaped unknown pid 27051 (exit status 0)
+2023-09-04 04:39:46,482 INFO reaped unknown pid 28715 (exit status 0)
+2023-09-04 04:40:32,530 INFO reaped unknown pid 586 (exit status 1)
+2023-09-04 04:40:32,530 INFO reaped unknown pid 587 (exit status 2)
+2023-09-04 04:49:03,137 CRIT Supervisor is running as root.  Privileges were not dropped because no user is specified in the config file.  If you intend to run as root, you can set user=root in the config file to avoid this message.
+2023-09-04 04:49:03,142 INFO RPC interface 'supervisor' initialized
+2023-09-04 04:49:03,143 CRIT Server 'inet_http_server' running without any HTTP authentication checking
+2023-09-04 04:49:03,143 INFO supervisord started with pid 1
+2023-09-04 04:49:04,145 INFO spawned: 'apache2' with pid 64
+2023-09-04 04:49:04,146 INFO spawned: 'codecov_conversion' with pid 65
+2023-09-04 04:49:04,148 INFO spawned: 'mysql' with pid 66
+2023-09-04 04:49:05,150 INFO success: apache2 entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-04 04:49:05,150 INFO success: codecov_conversion entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-04 04:49:05,150 INFO success: mysql entered RUNNING state, process has stayed up for > than 1 seconds (startsecs)
+2023-09-04 04:49:52,201 INFO reaped unknown pid 581 (exit status 0)
+2023-09-04 04:53:54,454 INFO reaped unknown pid 29266 (exit status 0)
+2023-09-04 04:54:08,468 INFO reaped unknown pid 30932 (exit status 0)
+2023-09-04 04:54:59,522 INFO reaped unknown pid 587 (exit status 1)
+2023-09-04 04:54:59,522 INFO reaped unknown pid 588 (exit status 2)
+2023-09-04 09:54:12,478 INFO reaped unknown pid 2160699 (exit status 0)
+2023-09-04 09:54:26,493 INFO reaped unknown pid 2162412 (exit status 0)
+2023-09-04 09:54:31,499 INFO reaped unknown pid 30942 (exit status 1)
+2023-09-04 09:54:31,499 INFO reaped unknown pid 30946 (exit status 2)
+2023-09-04 14:54:29,921 INFO reaped unknown pid 98990 (exit status 0)
+2023-09-04 14:54:44,936 INFO reaped unknown pid 100705 (exit status 0)
+2023-09-04 14:54:45,937 INFO reaped unknown pid 2162422 (exit status 1)
+2023-09-04 14:54:45,937 INFO reaped unknown pid 2162425 (exit status 2)
+2023-09-04 19:54:48,372 INFO reaped unknown pid 2232074 (exit status 0)
+2023-09-04 19:55:02,387 INFO reaped unknown pid 2233796 (exit status 0)
+2023-09-04 19:55:03,388 INFO reaped unknown pid 100715 (exit status 1)
+2023-09-04 19:55:03,388 INFO reaped unknown pid 100719 (exit status 2)
+2023-09-05 00:55:05,862 INFO reaped unknown pid 172470 (exit status 0)
+2023-09-05 00:55:20,878 INFO reaped unknown pid 174202 (exit status 0)
+2023-09-05 00:55:21,879 INFO reaped unknown pid 2233806 (exit status 1)
+2023-09-05 00:55:21,879 INFO reaped unknown pid 2233807 (exit status 2)
+2023-09-05 05:55:23,543 INFO reaped unknown pid 2311247 (exit status 0)
+2023-09-05 05:55:38,560 INFO reaped unknown pid 174259 (exit status 1)
+2023-09-05 05:55:38,560 INFO reaped unknown pid 2312970 (exit status 0)
+2023-09-05 05:55:38,560 INFO reaped unknown pid 174263 (exit status 2)
+2023-09-05 10:55:41,109 INFO reaped unknown pid 253216 (exit status 0)
+2023-09-05 10:55:55,122 INFO reaped unknown pid 2312977 (exit status 1)
+2023-09-05 10:55:55,122 INFO reaped unknown pid 254924 (exit status 0)
+2023-09-05 10:55:55,122 INFO reaped unknown pid 2312978 (exit status 2)
+2023-09-05 15:55:57,902 INFO reaped unknown pid 2386804 (exit status 0)
+2023-09-05 15:56:11,916 INFO reaped unknown pid 254934 (exit status 0)
+2023-09-05 15:56:11,916 INFO reaped unknown pid 2388516 (exit status 0)
+2023-09-05 15:56:11,916 INFO reaped unknown pid 254938 (terminated by SIGKILL)

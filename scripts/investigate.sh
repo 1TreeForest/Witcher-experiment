@@ -3,7 +3,7 @@
 for f in fuzzer-master/crashes/id*; 
 do 
 	echo "$f";
-	parser.py "$f"; 
+	python3 /p/Witcher-experiment/scripts/parser.py "$f"; 
 	echo; 
 	echo; 
 done; 

@@ -23,7 +23,7 @@ done
 #mysql -e "GRANT ALL ON *.* TO root@'%' IDENTIFIED BY '' WITH GRANT OPTION"
 
 # create the default database from the ADDed file.
-mysql < /db.sql
+#mysql < hms.sql
 
 #mysql dogdb -e "select count(*) from user"
 
