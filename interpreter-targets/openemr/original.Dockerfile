@@ -1,7 +1,8 @@
 # FROM ubuntu:18.04
-FROM witcher/normalphp7run
+FROM puppeteer1337/php7
 
-ENV TZ="Asia/Hong_Kong"
+ENV DEBIAN_FRONTEND="noninteractive"
+ENV TZ="Etc/UTC"
 RUN apt-get update && apt-get install -y sudo php-mysqli
 
 # Install OpenEMR
@@ -20,8 +21,6 @@ COPY etc/scripts/utilities/* /root/
 RUN chmod 600 /var/www/openemr
 RUN chmod 500 autoconfig.sh /root/unlock_admin.sh
 COPY --chown=www-data:www-data etc/globals.php /var/www/openemr/interface/globals.php
-COPY --chown=wc:wc admin /test_modes
-COPY --chown=wc:wc user /test_modes
 
 RUN chmod 0755 /var/www/openemr/run_setup.sh
 ENTRYPOINT /var/www/openemr/run_setup.sh
